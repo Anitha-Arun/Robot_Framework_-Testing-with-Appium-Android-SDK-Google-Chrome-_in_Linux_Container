@@ -39,14 +39,30 @@ steps:
     docker cp my-container:/results $(Build.ArtifactStagingDirectory)/results
   displayName: 'Copy Test Results to Host'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/results'
-    ArtifactName: 'RobotFrameworkResults'
-  displayName: 'Publish Test Results as Artifacts'
-
 - script: |
     echo "Stopping Docker container..."
     docker stop my-container
     docker rm my-container
   displayName: 'Stop and Remove Docker Container'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)/results'
+    artifact: 'RobotFrameworkResults'
+  displayName: 'Publish Test Results as Pipeline Artifact'
+
+- script: |
+    echo "Cloning the repository to push test results..."
+    git clone https://$(GITHUB_USER):$(GITHUB_TOKEN)@github.com/Anitha-Arun/Automationcode.git
+    cd Automationcode
+    mkdir -p test_results
+    cp -r $(Build.ArtifactStagingDirectory)/results/* test_results/
+    git config user.name "Anitha-Arun"
+    git config user.email "anithaarunkumar0313@gmail.com"
+    git add .
+    git commit -m "Add test results"
+    git push origin main
+  displayName: 'Push Test Results to GitHub'
+  env:
+    GITHUB_USER: $(GITHUB_USER)
+    GITHUB_TOKEN: $(GITHUB_TOKEN)
