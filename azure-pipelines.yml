@@ -13,6 +13,22 @@ steps:
   displayName: 'Build Docker Image'
 
 - script: |
-    echo "Listing Docker images..."
-    docker images
-  displayName: 'List Docker Images'
+    echo "Running Docker container..."
+    docker run --name my-container -d my-custom-image:latest
+  displayName: 'Run Docker Container'
+
+- script: |
+    echo "Copying files from Docker container..."
+    docker cp my-container:/app/PartnerDevices_Automation /home/vsts/PartnerDevices_Automation
+  displayName: 'Copy Files from Docker Container'
+
+- script: |
+    echo "Stopping Docker container..."
+    docker stop my-container
+    docker rm my-container
+  displayName: 'Stop and Remove Docker Container'
+
+- script: |
+    echo "Listing copied files..."
+    ls /home/vsts/PartnerDevices_Automation
+  displayName: 'List Copied Files'
