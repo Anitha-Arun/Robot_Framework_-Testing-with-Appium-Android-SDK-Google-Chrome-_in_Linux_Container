@@ -1,11 +1,21 @@
 trigger:
-- main  # Adjust the branch name if needed
+- main  # Adjust to your branch name
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- checkout: self  # Checkout the code from your repository
+- task: PublishPipelineArtifact@1
+  inputs:
+    artifactName: 'PartnerDevices_Automation'
+    path: 'C:/Users/v-adamarla/Desktop/AutomationApk/PartnerDevices_Automation'
+  displayName: 'Publish Folder as Pipeline Artifact'
+
+- task: DownloadPipelineArtifact@2
+  inputs:
+    artifactName: 'PartnerDevices_Automation'
+    downloadPath: '/home/vsts/work/PartnerDevices_Automation'
+  displayName: 'Download Pipeline Artifact'
 
 - script: |
     echo "Building Docker image..."
@@ -18,9 +28,9 @@ steps:
   displayName: 'Run Docker Container'
 
 - script: |
-    echo "Copying local folder to Docker container..."
-    docker cp C:/Users/v-adamarla/Desktop/AutomationApk/PartnerDevices_Automation my-container:/app/PartnerDevices_Automation
-  displayName: 'Copy Local Folder to Docker Container'
+    echo "Copying artifact folder to Docker container..."
+    docker cp /home/vsts/work/PartnerDevices_Automation my-container:/app/PartnerDevices_Automation
+  displayName: 'Copy Folder to Docker Container'
 
 - script: |
     echo "Creating symbolic links inside Docker container..."
@@ -30,7 +40,7 @@ steps:
   displayName: 'Create Symbolic Links'
 
 - script: |
-    echo "Executing Robot Framework tests..."
+    echo "Running Robot Framework tests..."
     docker exec my-container /bin/bash -c "robot -d /results -i 237605 /app/PartnerDevices_Automation/tests_teams_room"
   displayName: 'Run Robot Framework Tests'
 
