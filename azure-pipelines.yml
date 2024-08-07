@@ -1,11 +1,18 @@
 trigger:
-- main
+- main  # Adjust the branch name if needed
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- checkout: self  # Checkout the code from your repository
+
 - script: |
-    cd docker
+    echo "Building Docker image..."
     docker build -t my-custom-image:latest .
   displayName: 'Build Docker Image'
+
+- script: |
+    echo "Listing Docker images..."
+    docker images
+  displayName: 'List Docker Images'
