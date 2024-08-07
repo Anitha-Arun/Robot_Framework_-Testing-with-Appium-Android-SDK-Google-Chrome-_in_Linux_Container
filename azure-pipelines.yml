@@ -18,14 +18,9 @@ steps:
   displayName: 'Run Docker Container'
 
 - script: |
-    echo "Inspecting container filesystem..."
-    docker exec my-container /bin/bash -c "ls -l /app"
-  displayName: 'Inspect Container Filesystem'
-
-- script: |
-    echo "Copying files from Docker container..."
-    docker cp my-container:/app/PartnerDevices_Automation /home/vsts/PartnerDevices_Automation
-  displayName: 'Copy Files from Docker Container'
+    echo "Copying local folder to Docker container..."
+    docker cp C:/Users/v-adamarla/Desktop/AutomationApk/PartnerDevices_Automation my-container:/app/PartnerDevices_Automation
+  displayName: 'Copy Local Folder to Docker Container'
 
 - script: |
     echo "Creating symbolic links inside Docker container..."
@@ -44,8 +39,3 @@ steps:
     docker stop my-container
     docker rm my-container
   displayName: 'Stop and Remove Docker Container'
-
-- script: |
-    echo "Listing copied files..."
-    ls /home/vsts/PartnerDevices_Automation
-  displayName: 'List Copied Files'
