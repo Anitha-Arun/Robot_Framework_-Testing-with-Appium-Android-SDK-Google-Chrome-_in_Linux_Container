@@ -31,7 +31,7 @@ steps:
 
 - script: |
     echo "Running Robot Framework tests..."
-    docker exec my-container /bin/bash -c "robot -d /results -i 237605 /app/PartnerDevices_Automation/tests_teams_room"
+    docker exec my-container /bin/bash -c "cd /app/PartnerDevices_Automation && robot -d /results -i 237605 tests_teams_room"
   displayName: 'Run Robot Framework Tests'
 
 - script: |
