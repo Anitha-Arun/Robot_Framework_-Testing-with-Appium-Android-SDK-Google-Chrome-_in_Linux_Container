@@ -1,0 +1,21 @@
+{
+  "meeting_name": {
+    "id": "com.microsoft.skype.teams.ipphone:id/title"
+  },
+  "upcoming_time": {
+    "id": "com.microsoft.skype.teams.ipphone:id/upcoming_meeting_time",
+    "xpath": "//android.widget.TextView[@text='Now']"
+  },
+  "notifications_recycler_view": {
+    "id": "com.microsoft.skype.teams.ipphone:id/notifications_recycler_view"
+  },
+  "meeting_time": {
+    "id": "com.microsoft.skype.teams.ipphone:id/meeting_time"
+  },
+  "join_button": {
+    "xpath": "//android.widget.Button[@text='Join']"
+  },
+  "notifications": {
+    "id": "com.microsoft.skype.teams.ipphone:id/notifications_count"
+  }
+}

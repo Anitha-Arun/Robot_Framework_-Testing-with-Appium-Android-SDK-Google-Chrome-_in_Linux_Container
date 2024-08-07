@@ -1,0 +1,680 @@
+{
+  "current_time": {
+    "id": "com.microsoft.skype.teams.ipphone:id/app_status_bar_time_text"
+  },
+  "start_time": {
+    "id": "com.microsoft.skype.teams.ipphone:id/start_time_text",
+    "xpath": "//android.widget.TextView[contains(@index,'6')]"
+  },
+  "end_time": {
+    "id": "com.microsoft.skype.teams.ipphone:id/end_time_text",
+    "xpath": "//android.widget.TextView[contains(@index,'8')]"
+  },
+  "time_header": {
+    "id": "android:id/time_header",
+    "xpath": "//android.widget.RelativeLayout[contains(@index,'0')]"
+  },
+  "toogle_btn": {
+    "id": "android:id/toggle_mode",
+    "xpath": "//android.widget.ImageButton[@content-desc='Switch to text input mode for the time input.']"
+  },
+  "hour_text_box": {
+    "id": "android:id/input_hour"
+  },
+  "min_text_box": {
+    "id": "android:id/input_minute"
+  },
+  "ok_button": {
+    "id": "android:id/button1"
+  },
+  "video_view": {
+    "id": "com.microsoft.skype.teams.ipphone:id/video_view_container"
+  },
+  "start_meeting": {
+    "id": "com.microsoft.skype.teams.ipphone:id/meet_now_button",
+    "command": "new UiSelector().textContains(\"Start meeting\")"
+  },
+  "meeting_logo": {
+    "id": "com.microsoft.skype.teams.ipphone:id/meeting_icon_logo"
+  },
+  "raise_hand": {
+    "id": "com.microsoft.skype.teams.ipphone:id/icon_raise_hand"
+  },
+  "lower_hand": {
+    "xpath": "//android.widget.ImageView[@content-desc='lower hand']",
+    "xpath1": "//android.widget.Button[@text='Lower hand']"
+  },
+  "participant_raised_hand": {
+    "id": "com.microsoft.skype.teams.ipphone:id/participant_raisedHand"
+  },
+  "turn_on_live_captions": {
+    "xpath": "//android.widget.Button[@text='Turn on live captions']"
+  },
+  "turn_off_live_captions": {
+    "xpath": "//android.widget.Button[@text='Turn off live captions']"
+  },
+  "all_day_meeting_right_arrow": {
+    "id": "com.microsoft.skype.teams.ipphone:id/right_arrow",
+    "id1": "com.microsoft.skype.teams.ipphone:id/btn_all_day_display_opener"
+  },
+  "all_day_meeting_left_arrow": {
+    "id": "com.microsoft.skype.teams.ipphone:id/left_arrow",
+    "id1": "com.microsoft.skype.teams.ipphone:id/btn_all_day_display_closer",
+    "xpath": "//android.widget.ImageButton[@content-desc='Back']"
+  },
+  "all_day_meeting_count": {
+    "id": "com.microsoft.skype.teams.ipphone:id/date_list",
+    "id1": "com.microsoft.skype.teams.ipphone:id/tv_number_of_all_day_items",
+    "xpath": "//android.widget.TextView[@resource-id='com.microsoft.skype.teams.ipphone:id/all_day_meeting_count']"
+  },
+  "title_bar": {
+    "id": "com.microsoft.skype.teams.ipphone:id/top_title_bar",
+    "id1": "com.microsoft.skype.teams.ipphone:id/tv_all_day"
+  },
+  "meeting_list": {
+    "id": "com.microsoft.skype.teams.ipphone:id/meetings_list"
+  },
+  "remove_participant_from_call": {
+    "text": "Remove from call",
+    "xpath": "//android.widget.Button[@text='Remove from call']"
+  },
+  "someone_removed_you_from_the_call_text": {
+    "id": "com.microsoft.skype.teams.ipphone:id/end_call_callee_text",
+    "xpath": "//android.widget.TextView[@text='Someone removed you from the call']"
+  },
+  "far_mute_participant": {
+    "xpath": "//android.widget.Button[@text='Mute participant']"
+  },
+  "raise_hand_notification": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_notifications",
+    "xpath": "//android.widget.Button[@text='config_display']"
+  },
+  "stop_share_whiteboard": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_and_meeting_banner_buttons_dismiss_button",
+    "xpath": "//android.widget.TextView[@text='Stop share']"
+  },
+  "stop_recording": {
+    "xpath": "//android.widget.Button[@text='Stop recording']"
+  },
+  "recording_notification_text": {
+    "xpath": "//android.widget.TextView[@text='Recording is saved in the chat history.']",
+    "xpath1": "//android.widget.TextView[@text='Recording is saved in chat history. Learn more']"
+  },
+  "empty_text_selected": {
+    "xpath": "//android.widget.EditText[@text='Empty text. Selected.']"
+  },
+  "text_msg_xpath": {
+    "xpath": "//android.widget.EditText[@text='text_message']"
+  },
+  "delete_text": {
+    "xpath": "//android.view.MenuItem[@text='Delete']"
+  },
+  "edit_text_box": {
+    "xpath": "//android.view.MenuItem[@text='Edit text']"
+  },
+  "text_foreground_color_picker": {
+    "xpath": "//android.view.MenuItem[@text='Text foreground color picker']"
+  },
+  "text_field": {
+    "xpath": "//android.widget.EditText"
+  },
+  "meeting_names_toggle": {
+    "xpath": "//*[@text = 'Show meeting names']/following-sibling::android.widget.Switch[1]"
+  },
+  "show_meeting_names_text": {
+    "xpath": "//*[@text='Show meeting names']"
+  },
+  "meeting_action_bar_title_text": {
+    "id": "com.microsoft.skype.teams.ipphone:id/action_bar_title_text_norden",
+    "id1": "com.microsoft.skype.teams.ipphone:id/meeting_title"
+  },
+  "lock_the_meeting": {
+    "xpath": "//android.widget.Button[@text='Lock the meeting']"
+  },
+  "unlock_the_meeting": {
+    "xpath": "//android.widget.Button[@text='Unlock the meeting']"
+  },
+  "meeting_lock_notification": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_notifications"
+  },
+  "meeting_locked_msg": {
+    "id": "com.microsoft.skype.teams.ipphone:id/end_call_failure_text",
+    "xpath": "//android.widget.TextView[@content-desc='This meeting is locked.' or @text='This meeting is locked.']"
+  },
+  "allow_bluetooth_beaconing": {
+    "xpath": "//android.widget.TextView[@content-desc='Allow Bluetooth beaconing button']"
+  },
+   "proximity_btn": {
+     "command": "new UiSelector().textContains(\"Automatically accept proximity-based meeting invitations\")",
+    "xpath": "//android.widget.TextView[@content-desc='Automatically accept proximity-based meeting invitations button']"
+  },
+  "allow_remote_control_of_room_system_btn": {
+    "xpath": "//android.widget.TextView[@content-desc='Allow remote control from personal devices button']",
+    "xpath1": "//android.widget.TextView[@content-desc='Allow remote control of room system button']"
+  },
+  "add_yellow_notes": {
+    "xpath": "//android.widget.Button[@text='Add Yellow note']"
+  },
+  "save_btn": {
+    "xpath": "//android.widget.Button[@text='Save']"
+  },
+  "add_soft_orange_notes": {
+    "xpath": "//android.widget.Button[@text='Add Soft Orange note']"
+  },
+  "add_orange_notes": {
+    "xpath": "//android.widget.Button[@text='Add Orange note']"
+  },
+  "add_soft_red_notes": {
+    "xpath": "//android.widget.Button[@text='Add Soft Red note']"
+  },
+  "add_pink_notes": {
+    "xpath": "//android.widget.Button[@text='Add Pink note']"
+  },
+  "add_green_notes": {
+    "xpath": "//android.widget.Button[@text='Add Green note']"
+  },
+  "add_soft_cyan_notes": {
+    "xpath": "//android.widget.Button[@text='Add Soft Cyan note']"
+  },
+  "add_blue_notes": {
+    "xpath": "//android.widget.Button[@text='Add Blue note']"
+  },
+  "add_soft_blue_notes": {
+    "xpath": "//android.widget.Button[@text='Add Soft Blue note']"
+  },
+  "add_violet_notes": {
+    "xpath": "//android.widget.Button[@text='Add Violet note']"
+  },
+  "together_mode": {
+    "xpath": "//android.widget.Button[@text='Together mode']",
+    "command": "new UiSelector().textContains(\"Together mode\")"
+  },
+  "gallery_mode": {
+    "xpath": "//android.widget.Button[@text='Gallery']",
+    "command": "new UiSelector().textContains(\"Gallery\")"
+  },
+  "large_gallery_mode": {
+    "xpath": "//android.widget.Button[@text='Large gallery']",
+    "command": "new UiSelector().textContains(\"Large gallery\")"
+  },
+  "profile_gallery_pictures": {
+    "id": "com.microsoft.skype.teams.ipphone:id/profile_picture"
+  },
+  "call_control_reactions_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_control_reactions_button"
+  },
+  "light_grey_notes": {
+    "xpath": "//android.widget.Button[@text='Add Light Gray note']"
+  },
+  "grey_notes": {
+    "xpath": "//android.widget.Button[@text='Add Gray note']"
+  },
+  "turn_off_remote_control": {
+    "xpath": "//android.widget.Button[@text='Turn off remote control']"
+  },
+  "report_an_issue": {
+    "xpath": "//android.widget.Button[@text='Report an issue']"
+  },
+  "attende_x_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_and_meeting_banner_x_button"
+  },
+  "spotlight_for_everyone": {
+    "xpath": "//android.widget.Button[@text='Spotlight for everyone']"
+  },
+  "add_spotlight": {
+    "xpath": "//android.widget.Button[@text='Add Spotlight']"
+  },
+  "spotlight": {
+    "xpath": "//android.widget.Button[@text='Spotlight']"
+  },
+  "close": {
+    "id": "com.microsoft.skype.teams.ipphone:id/close_roster_button"
+  },
+  "you_are_spotlighted": {
+    "xpath": "//android.widget.TextView[@text='You're spotlighted']",
+    "id": "com.microsoft.skype.teams.ipphone:id/call_notification_text"
+  },
+  "you_are_no_longer_spotlighted": {
+    "xpath": "//android.widget.TextView[@text='You're no longer spotlighted']",
+    "id": "com.microsoft.skype.teams.ipphone:id/call_notification_text"
+  },
+  "participant_spotlight": {
+    "id": "com.microsoft.skype.teams.ipphone:id/participant_spotlight_roster"
+  },
+  "stop_spotlight": {
+    "xpath": "//android.widget.Button[@text='Stop Spotlight']"
+  },
+  "stop_spotlight_ok_btn": {
+    "id": "android:id/button1"
+  },
+  "participant_summary": {
+    "id": "com.microsoft.skype.teams.ipphone:id/participant_summary"
+  },
+  "verify_pin": {
+    "id": "com.microsoft.skype.teams.ipphone:id/participant_pinned_icon"
+  },
+  "share_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_control_share_button",
+    "xpath": "//android.widget.Button[@content-desc='Share']"
+  },
+  "Microsoft_whiteboard_sharing": {
+    "id": "com.microsoft.skype.teams.ipphone:id/whiteboard_btn",
+    "xpath": "//android.widget.TextView[@text='Microsoft Whiteboard']"
+  },
+  "stop_whiteboard_sharing": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_control_share_button",
+    "xpath":"//android.widget.Button[@text='Stop whiteboard' or @text='STOP WHITEBOARD']"
+  },
+  "Camera_disabled": {
+    "xpath": "//android.widget.FrameLayout[@content-desc='Camera disabled']",
+    "xpath1": "//android.widget.Button[@content-desc='Camera disabled']"
+ },
+  "Disable_mic": {
+    "xpath": "//android.widget.Button[@text='Disable mic']"
+  },
+  "Disable_camera": {
+    "xpath": "//android.widget.Button[@text='Disable camera']"
+  },
+  "Mute_participant": {
+    "xpath": "//android.widget.Button[@text='Mute participant']"
+  },
+  "Make_a_presenter": {
+    "xpath": "//android.widget.Button[@text='Make a presenter']"
+  },
+  "Remove_from_meeting": {
+    "xpath": "//android.widget.Button[@text='Remove from meeting' or @text='Remove from call']"
+  },
+  "disable_camara_for_attendees_popup_for_off_toggle": {
+    "xpath": "//android.widget.Switch[@text='OFF']"
+  },
+  "disable_camara_for_attendees_popup_for_on_toggle": {
+    "id": "com.microsoft.skype.teams.ipphone:id/video_switch"
+  },
+  "mute_off_icon": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_mute_off_local"
+  },
+  "participant_video": {
+    "id": "com.microsoft.skype.teams.ipphone:id/participant_video"
+  },
+  "show_meeting_names_tgl_btn_on": {
+      "xpath": "//android.widget.Switch[@text='ON']"
+  },
+  "show_meeting_names_tgl_btn_off": {
+    "xpath": "//android.widget.Switch[@text='OFF']"
+  },
+  "report_an_issue_feedback": {
+    "xpath": "//android.widget.TextView[@text='feedback has been sent']"
+  },
+   "video_on": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_control_video",
+    "xpath": "//android.widget.Button[@content-desc='Video on']"
+  },
+  "video_off": {
+    "xpath": "//android.widget.Button[@content-desc='Video off']"
+  },
+  "disable_camera_avatar": {
+    "id": "com.microsoft.skype.teams.ipphone:id/participant_video_prohibited"
+  },
+  "extend_room_reservation_tgl": {
+    "xpath":"//*[@text = 'Extend room reservation']/following-sibling::android.widget.Switch[1]"
+  },
+  "extend_reservation": {
+    "command": "new UiSelector().textContains(\"Extend reservation\")"
+  },
+  "extend_reservation_15_minutes":{
+    "xpath":"//android.view.ViewGroup[contains(@index,'0')]/android.widget.TextView[@resource-id='com.microsoft.skype.teams.ipphone:id/tv_duration']"
+  },
+  "extend_reservation_30_minutes":{
+    "xpath":"//android.view.ViewGroup[contains(@index,'1')]/android.widget.TextView[@resource-id='com.microsoft.skype.teams.ipphone:id/tv_duration']"
+  },
+  "extend_reservation_45_minutes":{
+    "xpath":"//android.view.ViewGroup[contains(@index,'2')]/android.widget.TextView[@resource-id='com.microsoft.skype.teams.ipphone:id/tv_duration']"
+  },
+  "extend_reservation_60_minutes":{
+    "xpath":"//android.view.ViewGroup[contains(@index,'3')]/android.widget.TextView[@resource-id='com.microsoft.skype.teams.ipphone:id/tv_duration']"
+  },
+  "confirm_button":{
+    "command": "new UiSelector().textContains(\"Confirm\")"
+  },
+  "extend_reservation_popup": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_notification_text",
+    "id1": "com.microsoft.skype.teams.ipphone:id/call_notifications"
+  },
+  "new_end_time_for_meeting": {
+    "command": "new UiSelector().textContains(\"Choose the new end time for this meeting\")"
+  },
+  "Meetings_page": {
+    "command": "new UiSelector().textContains(\"Meetings\")"
+  },
+  "tick_symbol": {
+    "xpath": "//androidx.recyclerview.widget.RecyclerView[@resource-id='com.microsoft.skype.teams.ipphone:id/rv_suggestions']/android.view.ViewGroup[contains(@index,'0')]/android.widget.FrameLayout[@resource-id='com.microsoft.skype.teams.ipphone:id/iv_checkmark']"
+  },
+  "extended_meeting_time": {
+    "id": "com.microsoft.skype.teams.ipphone:id/meeting_time"
+  },
+  "Dismiss": {
+    "id": "com.microsoft.skype.teams.ipphone:id/iv_dismiss",
+    "command": "new UiSelector().textContains(\"Close\")"
+  },
+  "extend_reservation_time": {
+    "id": "com.microsoft.skype.teams.ipphone:id/tv_time"
+  },
+  "allow_camera": {
+    "command": "new UiSelector().textContains(\"Allow camera\")"
+  },
+  "you_have_muted": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_notification_text"
+  },
+  "invalid_credentials_popup": {
+    "xpath": "//*[@text='Incorrect or Incomplete Meeting Details' or @text='Unable to find a meeting matching those details.']"
+  },
+  "join_with_an_id": {
+    "id": "com.microsoft.skype.teams.ipphone:id/meeting_join_Code_btn",
+    "xpath": "//android.widget.TextView[@text='Join with meeting ID' or @text='Join with an ID']",
+    "command": "new UiSelector().textContains(\"Join with meeting ID\"]"
+  },
+  "join_with_a_meeting_ID":{
+    "command": "new UiSelector().textContains(\"Join with a meeting ID\")",
+    "id": "com.microsoft.skype.teams.ipphone:id/title"
+  },
+  "meeting_id": {
+    "command": "new UiSelector().textContains(\"meeting ID\")"
+  },
+  "meeting_passcode": {
+     "command": "new UiSelector().textContains(\"meeting passcode\")"
+  },
+  "meeting_id_text": {
+    "xpath": "//android.widget.LinearLayout[contains(@index,'2')]/android.widget.LinearLayout[contains(@index,'0')]/android.widget.TextView"
+  },
+  "enter_passcode_text": {
+    "xpath": "//android.widget.LinearLayout[contains(@index,'2')]/android.widget.LinearLayout[contains(@index,'1')]/android.widget.TextView"
+  },
+  "meeting_id_field": {
+    "id" : "com.microsoft.skype.teams.ipphone:id/code_edit_text"
+  },
+  "passcode_field": {
+    "id": "com.microsoft.skype.teams.ipphone:id/passcode_edit_text"
+  },
+  "join_meeting": {
+    "id": "com.microsoft.skype.teams.ipphone:id/join_meeting_button"
+  },
+  "Retry":{
+     "command": "new UiSelector().textContains(\"Retry\")"
+  },
+  "Meeting_info": {
+     "command": "new UiSelector().textContains(\"Meeting info\")"
+  },
+  "Meeting_info_field": {
+    "command": "new UiSelector().textContains(\"Join by entering a meeting ID and passcode\")"
+  },
+  "info_meeting_id": {
+    "id": "com.microsoft.skype.teams.ipphone:id/meeting_id_info"
+  },
+  "info_passcode_field": {
+    "id": "com.microsoft.skype.teams.ipphone:id/passcode_info"
+  },
+  "stop_spotlight_pop_up_message": {
+    "xpath": "//android.widget.TextView[@text='The video will no longer be highlighted for everyone in this meeting.']"
+  },
+  "stop_spot_light_cancel_button": {
+    "xpath": "//android.widget.Button[@text='Cancel']",
+    "command": "new UiSelector().textContains(\"STOP\")"
+  },
+  "call_control_content_share_mode": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_control_content_share_mode"
+  },
+  "chat_option": {
+    "xpath": "//android.widget.Button[@text='Chat']"
+  },
+  "chat_header": {
+    "xpath": "//android.widget.TextView[@text='Chat']"
+  },
+  "front_row": {
+     "command": "new UiSelector().textContains(\"Front row\")"
+  },
+  "large_gallery_text": {
+    "command": "new UiSelector().textContains(\"Large gallery\")"
+  },
+  "together_mode_text": {
+    "command": "new UiSelector().textContains(\"Together mode\")"
+  },
+  "front_row_participant_view": {
+    "id": "com.microsoft.skype.teams.ipphone:id/participant_name_text_view"
+  },
+  "front_row_mode": {
+    "command": "new UiSelector().text(\"Front row\")"
+  },
+  "customize_your_view_text": {
+    "command": "new UiSelector().text(\"Customize your view\")"
+  },
+  "chat": {
+    "command": "new UiSelector().textContains(\"Chat\")"
+  },
+  "Waiting_others_join": {
+    "command": "new UiSelector().textContains(\"Waiting for others to join.\")"
+  },
+  "chat_toggle_btn": {
+    "id": "com.microsoft.skype.teams.ipphone:id/dark_theme_switch",
+    "id1": "com.microsoft.skype.teams.ipphone:id/chat_switch"
+  },
+  "front_row_timer": {
+    "id": "com.microsoft.skype.teams.ipphone:id/control_message_time"
+  },
+  "Content_Gallery": {
+    "command": "new UiSelector().textContains(\"Content + Gallery\")"
+  },
+  "Content_only": {
+    "command": "new UiSelector().textContains(\"Content only\")"
+  },
+  "Default_stage_layout": {
+    "id": "com.microsoft.skype.teams.ipphone:id/spinner"
+  },
+  "white_board_start_meeting": {
+    "command": "new UiSelector().textContains(\"Start meeting\")"
+  },
+  "dail_info": {
+     "command": "new UiSelector().textContains(\"Dial in info\")"
+  },
+  "dismiss": {
+    "id": "com.microsoft.skype.teams.ipphone:id/icn_dismiss"
+  },
+  "chat_toggle_in_device_setting": {
+    "xpath":"//*[@text = 'Show meeting chat']/following-sibling::android.widget.Switch[1]"
+  },
+  "participant_view": {
+    "id": "com.microsoft.skype.teams.ipphone:id/participant_name_text_view"
+  },
+  "meeting_chat_timer": {
+    "id": "com.microsoft.skype.teams.ipphone:id/time_view"
+  },
+  "switch_gallery_orientation": {
+    "xpath": "//android.widget.Button[@text='Switch gallery orientation']"
+  },
+  "unable_extend_reservation":{
+    "command": "new UiSelector().textContains(\"Unable to extend reservation\")"
+  },
+  "unable_extend_reservation_message":{
+    "id": "com.microsoft.skype.teams.ipphone:id/tv_message_subtitle",
+    "command": "new UiSelector().textContains(\"There's no reservation to extend. Try scheduling a meeting in this room from your personal device.\")"
+  },
+  "extend_room_reservation": {
+    "command": "new UiSelector().textContains(\"Extend room reservation\")"
+  },
+  "notification_text": {
+      "id": "com.microsoft.skype.teams.ipphone:id/call_notification_text"
+  },
+  "together_mode_title": {
+    "command": "new UiSelector().textContains(\"Together mode\")",
+    "xpath": "//android.widget.FrameLayout[@content-desc=\"Together mode's video is displayed here, double tap and hold for more options\"]"
+  },
+  "large_gallery_title": {
+    "command": "new UiSelector().textContains(\"Large gallery\")",
+    "xpath": "//android.widget.FrameLayout[@content-desc=\"Large gallery's video is displayed here, double tap and hold for more options\"]"
+  },
+  "all_day_title_on_main_screen": {
+    "id": "com.microsoft.skype.teams.ipphone:id/tv_all_day",
+    "id1": "com.microsoft.skype.teams.ipphone:id/top_title_bar",
+    "xpath": "//android.widget.TextView[@text='All-day']",
+    "command": "new UiSelector().textContains(\"All Day\")"
+  },
+  "hightlighted_raised_hand": {
+    "id": "com.microsoft.skype.teams.ipphone:id/indicator_raiseHand"
+  },
+  "spotlight_popup_dscrpt": {
+    "xpath": "//android.widget.TextView[@text='You will highlight this video for everyone in this meeting.']"
+  },
+  "spotlight_border": {
+    "id": "com.microsoft.skype.teams.ipphone:id/spotlight_border"
+  },
+  "focus_on_content": {
+    "command": "new UiSelector().textContains(\"Focus on content\")"
+  },
+  "content_people": {
+    "command": "new UiSelector().textContains(\"Content + people\")"
+  },
+  "max_room_occupancy_notification_toggle": {
+    "xpath": "//*[@text = 'Max room occupancy notification']/following-sibling::android.widget.Switch[1]"
+  },
+  "hdmi_content_sharing": {
+    "xpath": "//*[@text ='Enable HDMI content sharing']/following-sibling::android.widget.Switch[1]"
+  },
+  "share_content_hdmi_in_meeting": {
+    "command": "new UiSelector().textContains(\"Share content with a cable\")"
+  },
+    "content_gallery_participant_grid": {
+    "id": "com.microsoft.skype.teams.ipphone:id/participant_overflow_grid"
+  },
+  "content_container": {
+    "id": "com.microsoft.skype.teams.ipphone:id/content_share_view_container"
+  },
+  "whiteboard_sharing_toggle": {
+    "xpath": "//*[@text = 'Allow room to initiate Whiteboard']/following-sibling::android.widget.Switch[1]"
+  },
+   "require_passcode_for_all_meetings_toggle": {
+     "xpath":"//*[@text = 'Require passcode for all meetings']/following-sibling::android.widget.Switch[1]"
+  },
+  "Hide": {
+    "command": "new UiSelector().textContains(\"Hide\")"
+  },
+  "chat_panel": {
+    "id": "com.microsoft.skype.teams.ipphone:id/chat_label"
+  },
+  "chat_view_container": {
+    "id": "com.microsoft.skype.teams.ipphone:id/modern_stage_chat_view_container"
+  },
+  "require_passcode_all_meetings_txt": {
+    "xpath":"//*[@text='Require passcode for all meetings']"
+  },
+  "hdmi_content_sharing_option": {
+    "xpath": "//*[@text ='Enable HDMI content sharing']"
+  },
+  "show_chat_option": {
+    "id": "com.microsoft.skype.teams.ipphone:id/chat_switch"
+  },
+  "default_gallery_check": {
+    "xpath": "//*[@text = 'Gallery']/following-sibling::android.widget.ImageView[@resource-id='com.microsoft.skype.teams.ipphone:id/item_checkmark']"
+  },
+  "default_large_gallery_check": {
+    "xpath": "//*[@text = 'Large gallery']/following-sibling::android.widget.ImageView[@resource-id='com.microsoft.skype.teams.ipphone:id/item_checkmark']"
+  },
+  "default_together_check": {
+    "xpath": "//*[@text = 'Together mode']/following-sibling::android.widget.ImageView[@resource-id='com.microsoft.skype.teams.ipphone:id/item_checkmark']"
+  },
+  "show_on_left_dropdown": {
+    "xpath": "//*[@text =\"Show on left\"]/following-sibling::android.widget.Spinner[1]"
+  },
+  "show_on_right_dropdown": {
+    "xpath": "//*[@text =\"Show on right\"]/following-sibling::android.widget.Spinner[1]"
+  },
+   "lobby_meeting_title": {
+    "id": "com.microsoft.skype.teams.ipphone:id/lobby_title"
+  },
+  "lobby_meeting_subtitle_title": {
+    "id": "com.microsoft.skype.teams.ipphone:id/lobby_subtitle",
+    "command": "new UiSelector().textContains(\"We've let people in the meeting know you're waiting.\")"
+  },
+  "denied_access_popup": {
+     "command": "new UiSelector().textContains(\"You have been denied access from meeting.\")"
+  },
+  "raise_hand_container": {
+    "id": "com.microsoft.skype.teams.ipphone:id/raised_hands_view_container"
+  },
+  "zoom_button": {
+    "command": "new UiSelector().textContains(\"Zoom\")"
+  },
+  "zoom_toggle": {
+    "xpath":"//*[@text = 'Zoom']/following-sibling::android.widget.Switch[1]"
+  },
+  "webex_toggle": {
+    "xpath":"//*[@text = 'Cisco Webex']/following-sibling::android.widget.Switch[1]"
+  },
+  "Next": {
+    "command": "new UiSelector().textContains(\"Next\")"
+  },
+  "Change_provider": {
+    "command": "new UiSelector().textContains(\"Change provider\")"
+  },
+  "join_zooom_meeting_button": {
+    "command": "new UiSelector().textContains(\"Join Zoom meeting\")"
+  },
+  "cancel": {
+    "command": "new UiSelector().textContains(\"Cancel\")"
+  },
+  "invalid_credentials_zoom_popup": {
+    "xpath": "//*[@text='Incorrect or Incomplete Meeting Details']"
+  },
+  "joining_meeting": {
+    "command": "new UiSelector().textContains(\"Joining Meeting...\")"
+  },
+  "3p_mute": {
+    "command": "new UiSelector().textContains(\"mute my microphone\")",
+    "xpath": "//*[@text='Mute']"
+  },
+  "3p_unmute": {
+    "xpath": "//*[@text='Unmute, or press and hold the Spacebar to temporarily unmute']",
+    "command": "new UiSelector().textContains(\"unmute my microphone\")"
+  },
+  "3p_video_on": {
+    "xpath": "//*[@text='Stop video']",
+    "command": "new UiSelector().textContains(\"stop my video\")"
+  },
+  "3p_more": {
+    "command": "new UiSelector().textContains(\"More meeting control\")"
+  },
+  "3p_settings": {
+    "command": "new UiSelector().textContains(\"Settings\")"
+  },
+  "3p_Ai_companion": {
+    "command": "new UiSelector().textContains(\"AI Companion is off\")"
+  },
+  "3p_caption": {
+    "command": "new UiSelector().textContains(\"Show Captions\")"
+  },
+  "3p_video_off": {
+    "xpath": "//*[@text='Start video']",
+    "command": "new UiSelector().textContains(\"start my video\")"
+  },
+  "3p_record": {
+    "command": "new UiSelector().textContains(\"Record\")"
+  },
+  "3p_chat": {
+    "command": "new UiSelector().textContains(\"open the chat panel\")"
+  },
+  "lobby_video_container": {
+    "id": "com.microsoft.skype.teams.ipphone:id/video_view_container",
+    "id1": "com.microsoft.skype.teams.ipphone:id/calling_lobby_view_container"
+  },
+  "conference_id": {
+  "id": "com.microsoft.skype.teams.ipphone:id/meeting_info_conference_id"
+  },
+  "3p_stop_video": {
+    "command": "new UiSelector().textContains(\"Stop video\")"
+  },
+  "3p_leave_meeting": {
+    "command": "new UiSelector().textContains(\"Leave Meeting\")"
+  },
+  "webex_icon": {
+    "id": "com.microsoft.skype.teams.ipphone:id/iv_teams_icon"
+
+  }
+}

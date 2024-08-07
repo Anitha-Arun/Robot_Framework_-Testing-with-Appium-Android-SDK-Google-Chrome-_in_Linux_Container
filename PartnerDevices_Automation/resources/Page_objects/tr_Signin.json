@@ -1,0 +1,35 @@
+{
+  "more_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/more_btn",
+    "xpath": "//android.widget.TextView[@text='More']"
+  },
+  "meeting_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/vc_new_meeting_button",
+    "xpath": "//android.widget.TextView[@text='New meeting']"
+  },
+  "dial_pad_icon": {
+    "id": "com.microsoft.skype.teams.ipphone:id/vc_dial_pad_icon",
+    "xpath": "//android.widget.TextView[@text='Dialpad']"
+  },
+  "clock": {
+    "id": "com.microsoft.skype.teams.ipphone:id/clock"
+  },
+  "teams_logo": {
+    "id": "com.microsoft.skype.teams.ipphone:id/icon_logo"
+  },
+  "user_info": {
+    "id": "com.microsoft.skype.teams.ipphone:id/userinfo_avatar"
+  },
+  "meet_now": {
+    "id": "com.microsoft.skype.teams.ipphone:id/meetnow_btn",
+    "xpath": "//android.widget.TextView[@text='Meet now']"
+  },
+  "next_btn": {
+    "id": "com.microsoft.windowsintune.companyportal:id/bullet_list_page_forward_button",
+    "xpath": "//android.widget.Button[@text='NEXT']"
+  },
+  "sign_back": {
+    "id": "com.microsoft.skype.teams.ipphone:id/sign_in_back_button",
+    "xpath": "//android.widget.Button[@text='Back']"
+  }
+}

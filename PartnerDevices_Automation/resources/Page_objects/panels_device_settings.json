@@ -1,0 +1,439 @@
+{
+  "login_btn": {
+    "id": "com.crestron.settings:id/login_popup_login_button",
+    "command": "new UiSelector().textContains(\"Login\")"
+  },
+  "admin_settings": {
+    "id": "com.crestron.settings:id/activity_home_admin_button",
+    "command": "new UiSelector().textContains(\"Admin Settings\")"
+  },
+  "admin_pswd_field": {
+    "xpath": "//*[@text='Enter admin password']",
+    "id": "com.crestron.settings:id/login_popup_password_input",
+    "id1": "com.solaborate.teamssetting:id/txtPassword"
+  },
+  "admin_pass_field": {
+    "id": "com.neatframe.home:id/input"
+  },
+  "admin_login_btn": {
+    "xpath": "//android.widget.TextView[@text='Enter' or @text='OK']",
+    "xpath1": "//android.widget.Button[@text='Log In']"
+  },
+  "admin_login_continue_btn": {
+    "xpath": "//android.widget.Button[@text='CONTINUE']"
+  },
+  "account_sign_out": {
+    "id": "com.crestron.settings:id/activity_admin_sign_out_button"
+  },
+  "sign_out_btn": {
+    "id": "com.crestron.settings:id/fragment_sign_out_button",
+    "xpath": "//*[@text='Sign out' or @text='Sign Out']"
+  },
+  "device_settings_list_user_sign_out_option": {
+    "xpath": "//*[@text='Sign out' or @text='Sign Out']"
+  },
+  "california_device_settings_sign_out_btn": {
+    "command": "new UiSelector().resourceId(\"com.yealink.settings:id/settings_list_container\").childSelector(new UiSelector().textContains(\"sign out\"))"
+  },
+  "admin_sign_out": {
+    "id": "com.yealink.setting:id/layout_root"
+  },
+  "california_admin_sign_out": {
+    "xpath": "//android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout/android.widget.TextView[@text='Sign out']"
+  },
+  "teams_admin_settings3": {
+    "id": "com.yealink.setting:id/tv_title"
+  },
+  "panels_app_settings": {
+    "id": "com.crestron.settings:id/activity_admin_panels_app_button"
+  },
+  "panels_app_settings1": {
+    "id": "com.crestron.settings:id/fragment_panels_app_settings_button"
+  },
+  "panels_app_settings_header": {
+    "xpath": "//android.widget.TextView[@text='Panels app settings']"
+  },
+  "meetings_in_panel": {
+    "command": "new UiSelector().textContains(\"Meetings\")",
+    "xpath": "//*[@text='Meetings']"
+  },
+  "LED_settings_in_panel": {
+    "xpath": "//*[@text='LED settings']"
+  },
+  "room_equipment_toggle": {
+    "xpath": "//*[@text = 'Show room equipment']/following-sibling::android.widget.Switch[1]",
+    "id": "com.microsoft.skype.teams.ipphone:id/settings_show_room_equipment"
+  },
+  "room_equipment_toggle_off": {
+    "xpath": "//android.view.ViewGroup[@resource-id='com.microsoft.skype.teams.ipphone:id/settings_show_room_equipment']/android.widget.Switch[@text='OFF']"
+  },
+  "room_equipment_toggle_on": {
+    "xpath": "//android.view.ViewGroup[@resource-id='com.microsoft.skype.teams.ipphone:id/settings_show_room_equipment']/android.widget.Switch[@text='ON']"
+  },
+  "more_apps": {
+    "xpath": "//android.widget.TextView[@text='More']",
+    "id": "com.microsoft.skype.teams.ipphone:id/app_icon"
+  },
+  "room_equipment_app": {
+    "xpath": "//android.widget.TextView[@text='Room equipme...']"
+  },
+  "room_reservation_toggle": {
+    "xpath": "//*[@text = 'Allow room reservations on device']/following-sibling::android.widget.Switch[contains(@index,'2')]",
+    "id": "com.microsoft.skype.teams.ipphone:id/settings_allow_reservation"
+  },
+  "room_reservation_disabled_msg": {
+    "id": "com.microsoft.skype.teams.ipphone:id/reservation_disabled"
+  },
+  "show_meeting_name_toggle": {
+    "xpath": "//*[@text = 'Show meeting names']/following-sibling::android.widget.Switch[1]",
+    "id": "com.microsoft.skype.teams.ipphone:id/settings_show_meeting_names"
+  },
+  "device_pairing_in_panel": {
+    "xpath": "//*[@text='Device pairing']"
+  },
+  "all_set": {
+    "xpath": "//android.widget.TextView[@text='All set!']"
+  },
+  "checkin_toggle_btn": {
+    "id": "com.microsoft.skype.teams.ipphone:id/settings_room_release_switch"
+  },
+  "Reboot_panel": {
+    "xpath": "//android.widget.TextView[@text='Reboot']",
+    "xpath1": "//android.widget.TextView[@text='Reboot device']",
+    "command": "new UiSelector().textContains(\"Reboot Device\")"
+  },
+  "third_party_copyright_text": {
+    "xpath": "//android.widget.TextView[@text='Copyright (c) 2014 Raizlabs']"
+  },
+  "reset_pairing": {
+    "xpath": "//android.widget.TextView[@text='Reset pairing']"
+  },
+  "check_out_txt": {
+    "command": "new UiSelector().textContains(\"Allow early check-out\")"
+  },
+  "check_out_toggle_btn": {
+    "xpath": "//*[@text = 'Allow early check-out']/following-sibling::android.widget.Switch[contains(@index,'2')]"
+  },
+  "looking_for_devices_in_panel": {
+    "xpath": "//android.widget.TextView[@text='Looking for available devices...']"
+  },
+  "go_back_from_more_apps": {
+    "id": "com.microsoft.skype.teams.ipphone:id/iv_go_back"
+  },
+  "no_device": {
+    "xpath": "//android.widget.TextView[@text='Couldn’t find any devices']",
+    "xpath1": "//android.widget.TextView[@text='Make sure the device you want to pair is signed in to the same Teams account.']"
+  },
+  "panel_user_name": {
+    "id": "com.microsoft.skype.teams.ipphone:id/display_name"
+  },
+  "close_button": {
+    "id": "com.neatframe.home:id/finishButton",
+    "id1": "com.logitech.collabos.lockscreen:id/closeButton"
+  },
+  "incorrect_code_error": {
+    "xpath": "//android.widget.TextView[@text='Incorrect code. Try entering it again.']"
+  },
+  "extend_room_reservation_toggle": {
+    "xpath": "//*[@text = 'Allow room reservation extensions']/following-sibling::android.widget.Switch[1]"
+  },
+  "extend_room_reservation_txt": {
+    "xpath": "//*[@text='Allow room reservation extensions']"
+  },
+  "Max_room_occupancy_text": {
+    "xpath": "//*[@text='Max room occupancy notification']"
+  },
+  "Max_room_occupancy_toggle": {
+    "xpath": "//*[@text = 'Max room occupancy notification']/following-sibling::android.widget.Switch[1]"
+  },
+  "room_release_warning": {
+    "xpath": "//android.widget.TextView[@text='Your room reservation will be canceled soon. Check in to keep it.']"
+  },
+  "room_released_alert": {
+    "xpath": "//android.widget.TextView[@text='This room is no longer reserved. Since no one checked in, the reservation has been canceled.']"
+  },
+  "room_release_time_dropdown": {
+    "id": "com.microsoft.skype.teams.ipphone:id/settings_room_release_time_setting_spinner"
+  },
+  "room_release_time": {
+    "id": "android:id/text1"
+  },
+  "room_release_time_specific": {
+    "xpath": "//android.widget.CheckedTextView[@text = 'replace minutes']"
+  },
+  "checkin_notification_toggle": {
+    "id": "com.microsoft.skype.teams.ipphone:id/settings_check_in_notification_switch"
+  },
+  "background_button": {
+    "command": "new UiSelector().textContains(\"Background\")"
+  },
+  "admin_back_button": {
+    "id": "com.crestron.settings:id/activity_admin_back_button",
+    "id1": "com.solaborate.teamssetting:id/back"
+  },
+  "room_reserve_txt": {
+    "xpath": "//*[@text='Allow room reservations on device']"
+  },
+  "Admin_old_pwd": {
+    "xpath": "//android.widget.LinearLayout[contains(@index,'0')]/android.widget.LinearLayout[contains(@index,'0')]/android.widget.EditText[@resource-id='com.yealink.setting:id/et_content'],",
+    "xpath1": "//android.widget.LinearLayout[contains(@index,'0')]/android.widget.LinearLayout[contains(@index,'1')]/android.widget.EditText[@resource-id='com.yealink.setting:id/edit_text'],",
+    "id": "com.crestron.settings:id/fragment_admin_settings_current_input",
+    "id1": "com.logitech.collabos.lockscreen:id/editTextOldPassword"
+  },
+  "Admin_new_pwd": {
+    "xpath": "//android.widget.LinearLayout[contains(@index,'1')]/android.widget.LinearLayout[contains(@index,'0')]/android.widget.EditText[@resource-id='com.yealink.setting:id/et_content'],",
+    "xpath1": "//android.widget.LinearLayout[contains(@index,'1')]/android.widget.LinearLayout[contains(@index,'1')]/android.widget.EditText[@resource-id='com.yealink.setting:id/edit_text'],",
+    "id": "com.crestron.settings:id/fragment_admin_settings_new_input",
+    "id1": "com.logitech.collabos.lockscreen:id/editTextNewPassword"
+  },
+  "Admin_confirm_pwd": {
+    "xpath": "//android.widget.LinearLayout[contains(@index,'2')]/android.widget.LinearLayout[contains(@index,'0')]/android.widget.EditText[@resource-id='com.yealink.setting:id/et_content'],",
+    "xpath1": "//android.widget.LinearLayout[contains(@index,'2')]/android.widget.LinearLayout[contains(@index,'1')]/android.widget.EditText[@resource-id='com.yealink.setting:id/edit_text'],",
+    "id": "com.crestron.settings:id/fragment_admin_settings_confirm_input",
+    "id1": "com.logitech.collabos.lockscreen:id/editTextConfirmPassword"
+  },
+  "save_admin_pass": {
+    "id": "com.yealink.setting:id/tv_right",
+    "id1": "com.yealink.settings:id/actionbar_right_layout",
+    "xpath": "//android.widget.TextView[@text='Save']"
+  },
+  "saved_pass_notification": {
+    "command": "new UiSelector().textContains(\"Saving config file!\")"
+  },
+  "saved_pass_notification_plus": {
+    "command": "new UiSelector().textContains(\"Successfully saved\")"
+  },
+  "system_button": {
+    "xpath": "//android.widget.TextView[@text='System']"
+  },
+  "pass_reset_button": {
+    "xpath": "//android.widget.TextView[@text='Password Reset' or @text='Change password']",
+    "id": "com.logitech.collabos.lockscreen:id/resetPasswordLink"
+  },
+  "pass_editbox": {
+    "id": "com.yealink.settings:id/edit_text"
+  },
+  "allow_QR_room_reserve_txt": {
+    "xpath": "//*[@text='Allow room reservations by QR code']"
+  },
+  "room_reservation_toggle_qrCode": {
+    "xpath": "//*[@text = 'Allow room reservations by QR code']/following-sibling::android.widget.Switch[1]"
+  },
+  "display_setting": {
+    "command": "new UiSelector().textContains(\"Display\")",
+    "xpath": "//android.widget.TextView[@text='DISPLAY ORIENTATION' or @text='EXPAND Control Display']"
+  },
+  "adaptive_brightness_txt": {
+    "xpath": "//android.widget.TextView[@text='Adaptive Brightness' or @text='Screen Brightness']"
+  },
+  "power_saving_txt": {
+    "xpath": "//android.widget.TextView[@text='Power Saving Mode' or @text='Power Savings Settings']"
+  },
+  "auto_brightness": {
+    "xpath": "//android.widget.TextView[@text='Auto Brightness' or @text='Brightness level']"
+  },
+  "screen_lights_txt": {
+    "command": "new UiSelector().textContains(\"Screen and Lights\")"
+  },
+  "back_to_settings": {
+    "command": "new UiSelector().textContains(\"Back to settings\")"
+  },
+  "large_text": {
+    "xpath": "//android.widget.TextView[@text='Large Text' or @text='Enable Large Text' or @text='Font size' or @text='Large text']"
+  },
+  "color_correction_mode": {
+    "xpath": "//android.widget.TextView[@text='Color Correction' or @text='Color Correction Mode' or @text='Color correction']"
+  },
+  "high_contrast_text": {
+    "xpath": "//android.widget.TextView[@text='High Contrast Mode' or @text='Enable High Contrast' or @text='High contrast text' or @text='High contrast mode']"
+  },
+  "talkback_text": {
+    "xpath": "//android.widget.TextView[@text='Screen Reader' or @text='Talkback' or @text='Enable Talkback' or @text='TalkBack']"
+  },
+  "model_name": {
+    "xpath": "//android.widget.TextView[@text='Equipment Model' or @text='Model' or @text='Device Name' or @text='Device model' or @text='Device name']"
+  },
+  "Firmware_version": {
+    "xpath": "//android.widget.TextView[@text='Firmware Version' or @text='Firmware' or @text='Firmware version']"
+  },
+  "serial_no": {
+    "xpath": "//android.widget.TextView[@text='S/N' or  @text='Machine ID' or @text='Serial number' or @text='Serial Number']"
+  },
+  "device_info": {
+    "xpath": "//android.widget.TextView[@text='Device Information']"
+  },
+  "UC_Provider": {
+    "xpath": "//android.widget.TextView[@text='UC Provider']"
+  },
+  "teams_version": {
+    "xpath": "//*[@text='Teams Version' or  @text='Microsoft Teams' or @text='Microsoft Teams version']"
+  },
+  "partner_app_version": {
+    "xpath": "//*[@text='Partner APP Version' or  @text='Partner Agent' or @text='Partner Agent version' or @text='Partner App Version']"
+  },
+  "status_option": {
+    "command": "new UiSelector().textContains(\"Status\")"
+  },
+  "version_info": {
+    "command": "new UiSelector().textContains(\"Version info\")"
+  },
+  "Admin_old_pwd1": {
+    "id": "com.android.settings:id/admin_old_password",
+    "id1": "com.poly.lccsettings:id/oldPassword"
+  },
+  "Admin_new_pwd1": {
+    "id": "com.android.settings:id/admin_new_password",
+    "id1": "com.poly.lccsettings:id/newPassword"
+  },
+  "Admin_confirm_pwd1": {
+    "id": "com.android.settings:id/admin_confirm_password",
+    "id1": "com.poly.lccsettings:id/confirmPassword",
+    "xpath": "//android.widget.TextView[@text='Partner APP Version' or  @text='Partner Agent']"
+  },
+  "service_provider_txt": {
+    "xpath": "//android.widget.TextView[@text='Service Provider']"
+  },
+  "nearby_rooms_app": {
+    "xpath": "//android.widget.TextView[@text='Nearby Rooms']"
+  },
+  "room_equipment_title": {
+    "id": "com.microsoft.skype.teams.ipphone:id/room_equipment_title"
+  },
+  "regional_settings_button": {
+    "xpath": "//android.widget.TextView[@text='Regional Settings']"
+  },
+  "time_format_option": {
+    "xpath": "//*[@text = '24 hours format']/following-sibling::android.widget.ImageView[1]",
+    "xpath1": "//android.widget.TextView[@text='Use 24-hour format']/ancestor::android.widget.RelativeLayout/following-sibling::android.widget.LinearLayout/descendant::android.widget.Switch"
+  },
+  "date_time": {
+    "xpath": "//android.widget.TextView[@text='Date & time' or @text='Date & Time' or @text='Date and Time' or @text='Time and Date']",
+    "xpath1": "//android.widget.TextView[@text='Date & Time']/ancestor::android.view.ViewGroup[@resource-id='com.solaborate.teamssetting:id/settingsItemLayout']"
+  },
+  "12_hr_time_format": {
+    "xpath": "//android.widget.TextView[@text='12 Hour']",
+    "id": "com.crestron.settings:id/fragment_time_12hour_time_radio_button",
+    "id1": "com.solaborate.teamssetting:id/rb12"
+  },
+  "12_hr_time_format_selected": {
+    "xpath1": "//*[@text = '12 Hour']/following-sibling::android.widget.ImageView[1]"
+  },
+  "24_hr_time_format": {
+    "xpath": "//android.widget.TextView[@text='24 Hour']",
+    "id": "com.crestron.settings:id/fragment_time_24hour_time_radio_button",
+    "id1": "com.solaborate.teamssetting:id/rb24"
+  },
+  "24_hr_time_format_selected": {
+    "xpath1": "//*[@text = '24 Hour']/following-sibling::android.widget.ImageView[1]"
+  },
+  "time_format_dropdown": {
+    "id": "com.poly.lccsettings:id/ic_dropdown2"
+  },
+  "time_format_selected_option": {
+    "xpath": "//*[@resource-id='com.poly.lccsettings:id/timeFormat']/child::android.widget.TextView"
+  },
+  "save_password": {
+    "id": "com.poly.lccsettings:id/savePassword"
+  },
+  "reset_button": {
+    "command": "new UiSelector().textContains(\"Reset\")"
+  },
+  "system_restart_alert": {
+    "command": "new UiSelector().textContains(\"System Restart\")"
+  },
+  "close_button1": {
+    "id": "com.logitech.oobe_settings:id/closeButton"
+  },
+  "Network_info_txt": {
+    "command": "new UiSelector().textContains(\"Network Info\")"
+  },
+  "network_btn": {
+    "xpath": "//*[@text='Network' or @text='Network Configuration' or @text='Modify network']"
+  },
+  "Gateway_txt": {
+    "xpath": "//*[@text='Gateway' or @text='Default Gateway:' or @text='Default Gateway']"
+  },
+  "MAC_txt": {
+    "xpath": "//*[@text='MAC' or @text='MAC Address']"
+  },
+  "DNS_1_txt": {
+    "xpath": "//*[@text='DNS Primary Server' or @text='DNS 1:'  or @text='DNS Server 1' or @text='DNS 1' or @text='Primary DNS' or @text='DNS Servers']"
+  },
+  "DNS_2_txt": {
+    "xpath": "//*[@text='DNS Secondary Server' or @text='DNS 2:' or @text='DNS Server 2' or @text='DNS 2' or @text='Secondary DNS']"
+  },
+  "wired_network_txt": {
+    "xpath": "//*[@text='Wired Network' or @text='Wired Connection']"
+  },
+  "wifi_txt": {
+    "xpath": "//*[@text='Wi-Fi']"
+  },
+  "Advanced_network_txt": {
+    "xpath": "//*[@text='Advanced Network']"
+  },
+  "domain_name_txt": {
+    "id": "com.crestron.settings:id/fragment_network_domain_label"
+  },
+  "host_name_txt": {
+    "xpath": "//*[@text='Host Name*']"
+  },
+  "ip_address_txt": {
+    "xpath": "//*[@text='IP address' or @text='IP Address' or @text='IP' or @text='IP Address:']"
+  },
+  "reset_custom_config": {
+    "id": "com.crestron.settings:id/fragment_debug_reset_config_button",
+    "xpath": "//*[@text='Reset Custom Configurations']"
+  },
+  "debug_Back_Button": {
+    "xpath": "//android.widget.ImageButton[@index='0']",
+    "xpath1": "//android.widget.ImageView[@index='0']"
+  },
+  "wifi_toggle_btn": {
+    "id": "com.yealink.settings:id/right_switch"
+  },
+  "admin_pass_button": {
+    "id": "com.crestron.settings:id/activity_admin_admin_button"
+  },
+  "device_restart_option": {
+    "xpath": "//*[@text='Device restart']"
+  },
+  "maintenance_mode_header": {
+    "id": "com.microsoft.skype.teams.ipphone:id/device_reboot_header"
+  },
+  "maintenance_details_txt": {
+    "xpath": "//*[@text='Turn on daily maintenance window restart']"
+  },
+  "start_reboot_txt": {
+    "xpath": "//*[@text='Start']"
+  },
+  "end_reboot_txt": {
+    "xpath": "//*[@text='End']"
+  },
+  "start_reboot_time": {
+    "xpath": "//*[@text='Start']/following-sibling::android.widget.TextView[@resource-id='com.microsoft.skype.teams.ipphone:id/time_text']"
+  },
+  "end_reboot_time": {
+    "xpath": "//*[@text='End']/following-sibling::android.widget.TextView[@resource-id='com.microsoft.skype.teams.ipphone:id/time_text']"
+  },
+  "maintenance_toggle_button": {
+    "xpath": "//android.widget.Switch[@resource-id='com.microsoft.skype.teams.ipphone:id/toggle']"
+  },
+  "choose_image_text": {
+    "xpath": "//*[@text='Choose your image']"
+  },
+  "background_info_text": {
+    "xpath": "//*[@text='or upload a custom image in the Teams Admin Center']"
+  },
+  "custom_bg_header": {
+    "id": "com.microsoft.skype.teams.ipphone:id/label_custom_background"
+  },
+  "custom_wallpaper_list": {
+    "id": "com.microsoft.skype.teams.ipphone:id/custom_wallpapers_list"
+  },
+  "custom_wallpaper_selected": {
+    "xpath": "//*[@content-desc='Custom wallpaper selected']"
+  },
+  "default_wallpaper_selected": {
+    "xpath": "//*[@content-desc='Vivid Flag wallpaper selected']"
+  }
+}

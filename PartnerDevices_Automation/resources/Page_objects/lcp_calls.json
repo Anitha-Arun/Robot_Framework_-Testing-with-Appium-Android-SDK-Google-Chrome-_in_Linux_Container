@@ -1,0 +1,41 @@
+{
+  "incoming_call_decline": {
+    "id": "com.microsoft.skype.teams.ipphone:id/decline_incoming_call"
+  },
+  "lcp_call_bar_entry_more_option":{
+  "id":"com.microsoft.skype.teams.ipphone:id/lcp_call_bar_entry_more_option"
+},
+  "call_swap": {
+    "xpath": "//android.widget.Button[@text='Swap call']"
+  },
+  "lcp_call_using_phone_no": {
+    "xpath": "//android.widget.Button[@text='replace_with_phone_no']"
+  },
+   "recent_user_entry_lcp": {
+    "xpath": "//android.view.ViewGroup[contains(@index, '0')]/android.widget.Button[@resource-id='com.microsoft.skype.teams.ipphone:id/call_list_item_user_profile_picture']"
+  },
+  "also_ring_off": {
+    "xpath": "//android.widget.TextView[@text='Also ring']/following-sibling::android.widget.Button[@resource-id='com.microsoft.skype.teams.ipphone:id/simul_ring_container_option_value']"
+  },
+  "call_unpark_more_option": {
+    "id": "com.microsoft.skype.teams.ipphone:id/btn_more_options"
+  },
+  "lcp_dial_tab": {
+    "id": "com.microsoft.skype.teams.ipphone:id/lcp_dial_call_title"
+  },
+  "consult": {
+    "command": "new UiSelector().textContains(\"CONSULT\")"
+  },
+  "transfer_title": {
+    "command": "new UiSelector().textContains(\"TRANSFER\")"
+  },
+  "dialpad_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/dialpad_button"
+  },
+  "search_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/search_button"
+  },
+  "people_or_phone": {
+    "xpath": "//android.widget.EditText[@text='People or Phone']"
+  }
+}

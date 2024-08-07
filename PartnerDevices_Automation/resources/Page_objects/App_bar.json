@@ -1,0 +1,133 @@
+{
+  "back": {
+    "xpath": "//android.widget.ImageButton[@content-desc='Back']",
+    "id": "com.android.settings:id/detai_fragment_back_button"
+  },
+  "more_tab": {
+    "xpath": "//android.widget.TextView[@text='More']",
+    "id": "com.microsoft.skype.teams.ipphone:id/call_more_options",
+    "command": "new UiSelector().description(\"More\")"
+  },
+  "hide_more_app_icon": {
+    "id": "com.microsoft.skype.teams.ipphone:id/modules_tray_handle_view",
+    "xpath": "//android.widget.ImageView[@content-desc='Hide more apps']"
+  },
+  "reorder": {
+    "xpath": "//*[@text='Reorder']",
+    "id": "com.microsoft.skype.teams.ipphone:id/modules_tray_edit_view"
+  },
+  "edit_navigation": {
+    "xpath": "//android.widget.TextView[@text='Edit navigation']"
+  },
+  "save_button": {
+    "xpath": "//android.widget.TextView[@text='SAVE']",
+    "id": "com.microsoft.skype.teams.ipphone:id/save_reordering"
+  },
+  "available_tab": {
+    "xpath": "//androidx.recyclerview.widget.RecyclerView"
+  },
+  "more_option": {
+    "id": "com.microsoft.skype.teams.ipphone:id/header_title",
+    "xpath": "//android.widget.TextView[contains(@index,'4')]"
+  },
+  "available_app": {
+    "id": "com.microsoft.skype.teams.ipphone:id/personal_apps_tray_pager"
+  },
+  "call_tab": {
+    "xpath": "//android.widget.TextView[@text='Calls']"
+  },
+  "calendar_tab": {
+    "xpath": "//android.widget.TextView[@text='Calendar']",
+    "xpath1": "//android.view.ViewGroup[@content-desc='Calendar']"
+  },
+  "people_tab": {
+    "xpath": "//*[@text='People']",
+    "xpath1": "//android.widget.RelativeLayout[contains(@index,'0')]"
+  },
+  "voicemail_tab": {
+    "id": "com.microsoft.skype.teams.ipphone:id/tab_container",
+    "xpath": "//*[@text='Voicemail']"
+  },
+  "walkie_talkie_tab": {
+     "command": "new UiSelector().textContains(\"Walkie Talkie\")"
+  },
+  "call_views": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_default_viw_options_header_text",
+    "xpath": "//android.widget.TextView[@text='Call views']"
+  },
+  "default_view": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_default_view_option_id",
+    "xpath": "//android.widget.TextView[@text='Default view']"
+  },
+  "speed_dial": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_default_view_speed_dial_option",
+    "xpath": "//android.widget.RadioButton[@text='Speed dial']"
+  },
+  "recent_call_history": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_default_view_recent_history_option",
+    "xpath": "//android.widget.RadioButton[@text='Recent call history']"
+  },
+  "default_view_pop": {
+    "xpath": "//android.widget.TextView[@text='Your settings have changed']",
+    "id": "android:id/message"
+  },
+  "relaunch_btn": {
+    "id": "android:id/button1"
+  },
+  "cancel_btn": {
+    "id": "android:id/button2",
+    "xpath": "//android.widget.Button[@text='CANCEL']"
+  },
+  "default_call_screen_view": {
+    "xpath": "//android.widget.TextView[@text='Default Call Screen View']"
+  },
+  "call": {
+    "id": "com.microsoft.skype.teams.ipphone:id/place_call",
+    "xpath": "//android.widget.TextView[@text='Call']"
+  },
+  "call_app": {
+    "xpath": "//android.view.ViewGroup[@resource-id='com.microsoft.skype.teams.ipphone:id/tab_container']/android.widget.TextView[@text='Calls']",
+    "xpath1": "//android.widget.TextView[@text='Calls']"
+  },
+  "voicemail_app": {
+    "xpath": "//android.view.ViewGroup[@resource-id='com.microsoft.skype.teams.ipphone:id/tab_container']/android.widget.TextView[@text='Voicemail']",
+    "xpath1": "//android.widget.TextView[@text='Voicemail']"
+  },
+  "calendar_app": {
+    "xpath": "//android.view.ViewGroup[@resource-id='com.microsoft.skype.teams.ipphone:id/tab_container']/android.widget.TextView[@text='Calendar']",
+    "xpath1": "//android.widget.TextView[@text='Calendar']"
+  },
+  "people_app": {
+    "xpath": "//android.view.ViewGroup[@resource-id='com.microsoft.skype.teams.ipphone:id/tab_container']/android.widget.TextView[@text='People']",
+    "xpath1": "//android.widget.TextView[@text='People']"
+  },
+  "call_dialpad": {
+    "xpath": "//android.widget.TextView[@text='DIALPAD']",
+    "id": "com.microsoft.skype.teams.ipphone:id/call_default_view_dialpad_option"
+  },
+  "meeting_list": {
+    "id": "com.microsoft.skype.teams.ipphone:id/meetings_list"
+  },
+  "favorites_tab": {
+    "xpath": "//android.widget.TextView[@text='FAVORITES']"
+  },
+  "recent_tab": {
+    "xpath": "//android.widget.TextView[@text='RECENT']",
+    "id": "com.microsoft.skype.teams.ipphone:id/tab_text"
+  },
+  "Make_a_call": {
+    "id": "com.microsoft.skype.teams.ipphone:id/fab",
+    "command": "new UiSelector().description(\"Make a call\")"
+  },
+  "call_icon": {
+    "id": "com.microsoft.skype.teams.ipphone:id/place_call",
+    "xpath": "//android.widget.TextView[@text='Call']"
+  },
+  "Calling": {
+    "xpath": "//android.widget.TextView[@text='Calling']"
+  },
+  "hidden_app_name": {
+    "id": "com.microsoft.skype.teams.ipphone:id/tab_name",
+    "id1": "com.microsoft.skype.teams.ipphone:id/tab_container"
+  }
+}

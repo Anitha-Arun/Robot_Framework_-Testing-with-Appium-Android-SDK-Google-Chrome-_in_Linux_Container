@@ -1,0 +1,11 @@
+{
+  "favorites_group": {
+    "xpath": "//android.view.ViewGroup[@content-desc='Favorites']"
+  },
+  "other_contacts_group": {
+    "xpath": "//android.view.ViewGroup[@content-desc='Other contacts']"
+  },
+  "speed_dial_group": {
+    "xpath": "//android.view.ViewGroup[@content-desc='Speed dial']"
+  }
+}

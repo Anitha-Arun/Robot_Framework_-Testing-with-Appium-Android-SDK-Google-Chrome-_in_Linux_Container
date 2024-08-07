@@ -1,0 +1,126 @@
+{
+  "volume_icon": {
+    "id": "com.microsoft.skype.teams.ipphone:id/volume_icon"
+  },
+  "volume_plus": {
+    "id": "com.microsoft.skype.teams.ipphone:id/volume_plus"
+  },
+  "volume_minus": {
+    "id": "com.microsoft.skype.teams.ipphone:id/volume_minus"
+  },
+  "meeting_title": {
+    "id": "com.microsoft.skype.teams.ipphone:id/available_title"
+  },
+  "dial_pad_icon": {
+    "id": "com.microsoft.skype.teams.ipphone:id/vc_dial_pad_icon",
+    "xpath": "//android.widget.TextView[@text='Dial pad']"
+  },
+  "meeting_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/meetnow_btn",
+    "xpath": "//android.widget.TextView[@text='Meet now']",
+    "xpath1": "//android.widget.TextView[@text='Meet']"
+  },
+  "user_name_v1": {
+    "command": "new UiSelector().resourceId(\"com.microsoft.skype.teams.ipphone:id/phone_room_number\")",
+    "xpath": "(//android.widget.LinearLayout[@content-desc='Phone room'])[1]/android.widget.TextView"
+  },
+  "more_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/more_btn",
+    "xpath": "//android.widget.TextView[@text='More']"
+  },
+  "meeting_name": {
+    "id": "com.microsoft.skype.teams.ipphone:id/vc_meeting_title"
+  },
+  "meeting_time": {
+    "id": "com.microsoft.skype.teams.ipphone:id/vc_meeting_duration"
+  },
+  "meeting_upcoming_time": {
+    "id": "com.microsoft.skype.teams.ipphone:id/meeting_label"
+  },
+  "meeting_organizer": {
+    "id": "com.microsoft.skype.teams.ipphone:id/vc_meeting_creator",
+    "xpath": "//android.widget.TextView[@text='config_display']"
+  },
+  "new_meeting": {
+    "id": "com.microsoft.skype.teams.ipphone:id/meet_now_layout",
+    "xpath": "//android.widget.TextView[@text='New meeting']"
+  },
+  "clock": {
+    "id": "com.microsoft.skype.teams.ipphone:id/userinfo_clock",
+    "id1": "com.microsoft.skype.teams.ipphone:id/clock"
+  },
+  "user_info": {
+    "id": "com.microsoft.skype.teams.ipphone:id/userinfo_avatar",
+    "xpath": "//android.widget.FrameLayout[@content-desc='User avatar profile picture']"
+  },
+  "dial_btn": {
+    "id": "com.microsoft.skype.teams.ipphone:id/dialpad_btn"
+  },
+  "Start_something_new": {
+    "id": "com.microsoft.skype.teams.ipphone:id/error_title",
+    "xpath": "//android.widget.TextView[@text='Start something new']"
+  },
+  "add_event": {
+    "id": "com.microsoft.skype.teams.ipphone:id/error_description"
+  },
+  "user_phone_number": {
+    "id": "com.microsoft.skype.teams.ipphone:id/user_phone_number"
+  },
+  "phone_number": {
+    "id": "com.microsoft.skype.teams.ipphone:id/vc_phone_call_number",
+    "xpath": "(//android.widget.LinearLayout[@content-desc='Phone room'])[2]/android.widget.TextView"
+  },
+  "share_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/projecting_btn",
+    "xpath": "//android.widget.TextView[@text='Share']"
+  },
+  "next_day_upcoming_meeting": {
+    "xpath": "//android.view.ViewGroup[2]/android.widget.TextView[@resource-id='com.microsoft.skype.teams.ipphone:id/tv_title']"
+  },
+  "day_month_date": {
+    "id": "com.microsoft.skype.teams.ipphone:id/userinfo_date"
+  },
+  "ring_indicator": {
+    "id": "com.microsoft.skype.teams.ipphone:id/ring_indicator"
+  },
+  "add_this_room_label": {
+    "xpath": "//android.widget.TextView[@text='Add this room to a meeting with your personal device']"
+  },
+  "help_btn": {
+    "id": "com.microsoft.skype.teams.ipphone:id/help_button"
+  },
+  "report_problem": {
+    "xpath": "//*[@text='Report a problem']"
+  },
+  "give_feedback": {
+    "xpath": "//*[@text='Give feedback']"
+  },
+  "give_feedback_title": {
+    "xpath": "//*[@text='Give feedback to Microsoft']"
+  },
+  "summarize_feedback_txt": {
+    "xpath": "//*[@text='Summarize your feedback']"
+  },
+  "feedback_text_box": {
+    "id": "com.microsoft.skype.teams.ipphone:id/feedback_compose_text"
+  },
+  "min_characters_text": {
+    "id": "com.microsoft.skype.teams.ipphone:id/minimum_character_textview"
+  },
+  "feedback_checkbox": {
+    "id": "com.microsoft.skype.teams.ipphone:id/logs_consent_switch"
+  },
+  "feedback_survey": {
+    "id": "com.microsoft.skype.teams.ipphone:id/logs_consent_subtitle",
+    "xpath": "//*[@text='aka.ms/teamsfeedbackprivacy']"
+  },
+  "whiteboard_meeting_btn":{
+    "id": "com.microsoft.skype.teams.ipphone:id/start_meeting_button"
+  },
+  "qr_code": {
+    "id": "com.microsoft.skype.teams.ipphone:id/qr_code_image"
+  },
+  "qr_code_description": {
+    "id": "com.microsoft.skype.teams.ipphone:id/qr_code_description"
+  }
+}

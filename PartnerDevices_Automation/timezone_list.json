@@ -1,0 +1,123 @@
+{"Timezone" : {
+    "ECT": {
+        "relative_GMT": "+1",
+        "TZ_name": "Europe/Amsterdam"
+    },
+    "EET": {
+        "relative_GMT": "+2",
+        "TZ_name": "Europe/Athens"
+    },
+    "ART": {
+        "relative_GMT": "+2",
+        "TZ_name": "Egypt"
+    },
+    "EAT": {
+        "relative_GMT": "+3",
+        "TZ_name": "Africa/Kampala"
+    },
+    "MET": {
+        "relative_GMT": "+3:30",
+        "TZ_name": "Asia/Tehran"
+    },
+    "NET": {
+        "relative_GMT": "+4",
+        "TZ_name": "Asia/Baku"
+    },
+    "PLT": {
+        "relative_GMT": "+5",
+        "TZ_name": "Asia/Karachi"
+    },
+    "IST": {
+        "relative_GMT": "+5:30",
+        "TZ_name": "Asia/Calcutta"
+    },
+    "BST": {
+        "relative_GMT": "+6",
+        "TZ_name": "Asia/Dhaka"
+    },
+    "VST": {
+        "relative_GMT": "+7",
+        "TZ_name": "Asia/Ho_Chi_Minh"
+    },
+    "CTT": {
+        "relative_GMT": "+8",
+        "TZ_name": "Asia/Taipei"
+    },
+    "JST": {
+        "relative_GMT": "+9",
+        "TZ_name": "Asia/Tokyo"
+    },
+    "ACT": {
+        "relative_GMT": "+9:30",
+        "TZ_name": "Australia/Darwin"
+    },
+    "AET": {
+        "relative_GMT": "+10",
+        "TZ_name": "Australia/Brisbane"
+    },
+    "SST": {
+        "relative_GMT": "+11",
+        "TZ_name": "Pacific/Guadalcanal"
+    },
+    "NST": {
+        "relative_GMT": "+12",
+        "TZ_name": ""
+    },
+    "MIT": {
+        "relative_GMT": "-11",
+        "TZ_name": "Pacific/Midway"
+    },
+    "HST": {
+        "relative_GMT": "-10",
+        "TZ_name": "America/Adak"
+    },
+    "AST": {
+        "relative_GMT": "-9",
+        "TZ_name": "America/Anchorage"
+    },
+    "PST": {
+        "relative_GMT": "-8",
+        "TZ_name": "Pacific/Pitcairn"
+    },
+    "PNT": {
+        "relative_GMT": "-7",
+        "TZ_name": "America/Phoenix"
+    },
+    "MST": {
+        "relative_GMT": "-7",
+        "TZ_name": "America/Boise"
+    },
+    "CST": {
+        "relative_GMT": "-6",
+        "TZ_name": "America/Belize"
+    },
+    "EST": {
+        "relative_GMT": "-5",
+        "TZ_name": "America/Atikokan"
+    },
+    "IET": {
+        "relative_GMT": "-5",
+        "TZ_name": "America/Indiana/Indianapolis"
+    },
+    "PRT": {
+        "relative_GMT": "-4",
+        "TZ_name": "America/Puerto_Rico"
+    },
+    "CNT": {
+        "relative_GMT": "-3:30",
+        "TZ_name": "America/St_Johns"
+    },
+    "AGT": {
+        "relative_GMT": "-3",
+        "TZ_name": "America/Argentina/Buenos_Aires"
+    },
+    "BET": {
+        "relative_GMT": "-3",
+        "TZ_name": "America/Araguaina"
+    },
+    "CAT": {
+        "relative_GMT": "-1",
+        "TZ_name": ""
+    }
+  }
+}
