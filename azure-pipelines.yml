@@ -5,10 +5,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: Docker@2
-  inputs:
-    command: 'pull'
-    container: 'anithaarun/robotframework-apexon:latest'
+- script: |
+    docker pull anithaarun/robotframework-apexon:latest
   displayName: 'Pull Docker Image from Docker Hub'
 
 - script: |
