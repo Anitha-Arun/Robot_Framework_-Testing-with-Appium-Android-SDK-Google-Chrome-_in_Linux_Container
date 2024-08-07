@@ -6,9 +6,6 @@ pool:
 
 steps:
 - script: |
-    docker pull anithaarun/robotframework-apexon:latest
-  displayName: 'Pull Docker Image from Docker Hub'
-
-- script: |
+    cd docker
     docker build -t my-custom-image:latest .
   displayName: 'Build Docker Image'
