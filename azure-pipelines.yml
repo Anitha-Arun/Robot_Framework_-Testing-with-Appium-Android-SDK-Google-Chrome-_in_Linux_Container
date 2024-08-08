@@ -1,12 +1,10 @@
 trigger:
-- main  # Adjust to your branch name if necessary
+- main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: 'MySelfHostedAgentPool'
 
 steps:
-- checkout: self
-
 - script: |
     echo "Building Docker image..."
     docker build -t my-custom-image:latest .
@@ -23,21 +21,20 @@ steps:
   displayName: 'Copy Folder to Docker Container'
 
 - script: |
-    echo "Creating symbolic links inside Docker container..."
-    docker exec my-container /bin/bash -c "ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Voicemail.json /app/PartnerDevices_Automation/resources/Page_objects/voicemail.json \
-    && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Common.json /app/PartnerDevices_Automation/resources/Page_objects/common.json \
-    && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/People.json /app/PartnerDevices_Automation/resources/Page_objects/people.json"
-  displayName: 'Create Symbolic Links'
+    echo "Verifying directory inside Docker container..."
+    docker exec my-container /bin/bash -c "ls -l /app/PartnerDevices_Automation"
+  displayName: 'Verify Directory'
 
 - script: |
-    echo "Testing network connectivity to Android device..."
-    docker exec my-container /bin/bash -c "ping -c 4 10.39.8.149"
-  displayName: 'Test Network Connectivity'
+    echo "Creating symbolic links inside Docker container..."
+    docker exec my-container /bin/bash -c "cd /app/PartnerDevices_Automation && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Voicemail.json /app/PartnerDevices_Automation/resources/Page_objects/voicemail.json && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Common.json /app/PartnerDevices_Automation/resources/Page_objects/common.json && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/People.json /app/PartnerDevices_Automation/resources/Page_objects/people.json"
+  displayName: 'Create Symbolic Links'
 
 - script: |
     echo "Connecting to Android device via ADB..."
     docker exec my-container /bin/bash -c "adb start-server"
-    docker exec my-container /bin/bash -c "adb connect 10.39.8.149:5555 -t 120"
+    docker exec my-container /bin/bash -c "adb devices"
+    docker exec my-container /bin/bash -c "adb connect 10.39.8.149:5555"
   displayName: 'Connect ADB Device'
 
 - script: |
