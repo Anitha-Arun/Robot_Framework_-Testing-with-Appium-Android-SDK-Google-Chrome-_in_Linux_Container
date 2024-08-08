@@ -13,7 +13,7 @@ steps:
   displayName: 'Build Docker Image'
 
 - script: |
-    echo "Running Docker container..."
+    echo "Running Docker container with host network..."
     docker run --name my-container --network host -d my-custom-image:latest /bin/bash -c "while true; do sleep 30; done;"
   displayName: 'Run Docker Container'
 
