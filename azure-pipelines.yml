@@ -30,15 +30,14 @@ steps:
   displayName: 'Create Symbolic Links'
 
 - script: |
-    echo "Verifying directory inside Docker container..."
-    docker exec my-container /bin/bash -c "ls -l /app/PartnerDevices_Automation"
-  displayName: 'Verify Directory'
+    echo "Testing network connectivity to Android device..."
+    docker exec my-container /bin/bash -c "ping -c 4 10.39.8.149"
+  displayName: 'Test Network Connectivity'
 
 - script: |
     echo "Connecting to Android device via ADB..."
     docker exec my-container /bin/bash -c "adb start-server"
-    docker exec my-container /bin/bash -c "adb devices"
-    docker exec my-container /bin/bash -c "adb connect 10.39.8.149:5555"
+    docker exec my-container /bin/bash -c "adb connect 10.39.8.149:5555 -t 120"
   displayName: 'Connect ADB Device'
 
 - script: |
