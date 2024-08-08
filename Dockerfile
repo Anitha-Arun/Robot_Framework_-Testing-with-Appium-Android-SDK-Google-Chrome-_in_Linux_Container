@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -y \
     procps \
     lsof \
     openjdk-11-jdk \
-    adb \                 # Ensure ADB is installed
+    adb \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -81,8 +81,7 @@ RUN yes | ${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager --licenses --sdk_r
 
 # Verify Build Tools Installation
 RUN ls -l ${ANDROID_HOME}/build-tools/30.0.3 && \
-    ls -l ${ANDROID_HOME}/cmdline-tools/latest/bin && \
-    adb --version                 # Verify ADB installation
+    ls -l ${ANDROID_HOME}/cmdline-tools/latest/bin
 
 # Set PYTHONPATH to include necessary directories
 ENV PYTHONPATH=/app/PartnerDevices_Automation/Libraries:/app/PartnerDevices_Automation/resources/keywords:/app/PartnerDevices_Automation:/usr/lib/python3.8
