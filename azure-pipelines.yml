@@ -18,20 +18,10 @@ steps:
   displayName: 'Run Docker Container'
 
 - script: |
-    echo "Copying PartnerDevices_Automation folder to Docker container..."
-    docker cp PartnerDevices_Automation my-container:/app/PartnerDevices_Automation
-  displayName: 'Copy Folder to Docker Container'
-
-- script: |
-    echo "Creating symbolic links inside Docker container..."
-    docker exec my-container /bin/bash -c "cd /app/PartnerDevices_Automation && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Voicemail.json /app/PartnerDevices_Automation/resources/Page_objects/voicemail.json \
-    && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Common.json /app/PartnerDevices_Automation/resources/Page_objects/common.json \
-    && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/People.json /app/PartnerDevices_Automation/resources/Page_objects/people.json"
-  displayName: 'Create Symbolic Links'
-
-- script: |
-    echo "Connecting to Android device via ADB..."
-    docker exec my-container /bin/bash -c "adb connect 10.39.8.149"
+    echo "Starting ADB server and connecting to Android device..."
+    docker exec my-container /bin/bash -c "adb start-server"
+    docker exec my-container /bin/bash -c "adb devices"
+    docker exec my-container /bin/bash -c "adb connect 10.39.8.149:5555"
   displayName: 'Connect ADB Device'
 
 - script: |
