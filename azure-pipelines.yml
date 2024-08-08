@@ -4,9 +4,6 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-variables:
-  ADB_CONNECT_TIMEOUT: 180  # Increase the timeout to 180 seconds
-
 steps:
 - checkout: self
 
@@ -17,7 +14,7 @@ steps:
 
 - script: |
     echo "Running Docker container..."
-    docker run --name my-container -d my-custom-image:latest /bin/bash -c "while true; do sleep 30; done;"
+    docker run --name my-container --network host -d my-custom-image:latest /bin/bash -c "while true; do sleep 30; done;"
   displayName: 'Run Docker Container'
 
 - script: |
@@ -33,11 +30,14 @@ steps:
   displayName: 'Create Symbolic Links'
 
 - script: |
+    echo "Connecting to Android device via ADB..."
+    docker exec my-container /bin/bash -c "adb connect 10.39.8.149"
+  displayName: 'Connect ADB Device'
+
+- script: |
     echo "Running Robot Framework tests..."
     docker exec my-container /bin/bash -c "cd /app/PartnerDevices_Automation && robot -d /results -i 237605 tests_teams_room"
   displayName: 'Run Robot Framework Tests'
-  env:
-    ADB_CONNECT_TIMEOUT: $(ADB_CONNECT_TIMEOUT)
 
 - script: |
     echo "Copying test results from Docker container to host..."
@@ -55,19 +55,3 @@ steps:
     targetPath: '$(Build.ArtifactStagingDirectory)/results'
     artifact: 'RobotFrameworkResults'
   displayName: 'Publish Test Results as Pipeline Artifact'
-
-- script: |
-    echo "Cloning the repository to push test results..."
-    git clone https://$(GITHUB_USER):$(GITHUB_TOKEN)@github.com/Anitha-Arun/Automationcode.git
-    cd Automationcode
-    mkdir -p test_results
-    cp -r $(Build.ArtifactStagingDirectory)/results/* test_results/
-    git config user.name "your-username"
-    git config user.email "your-email@example.com"
-    git add .
-    git commit -m "Add test results"
-    git push origin main
-  displayName: 'Push Test Results to GitHub'
-  env:
-    GITHUB_USER: $(GITHUB_USER)
-    GITHUB_TOKEN: $(GITHUB_TOKEN)
