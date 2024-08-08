@@ -16,17 +16,18 @@ steps:
   displayName: 'Run Docker Container'
 
 - script: |
-    echo "Testing ADB functionality in Docker container..."
-    set -o pipefail
-    adb_output=$(docker exec my-container /bin/bash -c "adb start-server && adb devices")
+    echo "Connecting to Android device via ADB..."
+    docker exec my-container /bin/bash -c "adb start-server"
+    docker exec my-container /bin/bash -c "adb connect 10.39.8.149:5555"
+    adb_output=$(docker exec my-container /bin/bash -c "adb devices")
     echo "$adb_output"
-    if echo "$adb_output" | grep -q 'List of devices attached'; then
-      echo "ADB is working correctly."
+    if echo "$adb_output" | grep -q '10.39.8.149:5555'; then
+      echo "ADB is connected to the device."
     else
-      echo "ADB is not working correctly. Please check the ADB setup."
+      echo "ADB failed to connect to the device. Please check the connection and ensure the device is available."
       exit 1
     fi
-  displayName: 'Test ADB Functionality'
+  displayName: 'Connect to ADB Device and Verify'
 
 - script: |
     echo "Stopping Docker container..."
