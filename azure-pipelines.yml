@@ -1,33 +1,41 @@
 trigger:
-- main
+- main  # Adjust to your branch name if necessary
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- checkout: self
+
 - script: |
     echo "Building Docker image..."
     docker build -t my-custom-image:latest .
   displayName: 'Build Docker Image'
 
 - script: |
-    echo "Running Docker container with host network..."
-    docker run --name my-container --network host -d my-custom-image:latest /bin/bash -c "while true; do sleep 30; done;"
+    echo "Running Docker container..."
+    docker run --name my-container -d my-custom-image:latest /bin/bash -c "while true; do sleep 30; done;"
   displayName: 'Run Docker Container'
 
 - script: |
-    echo "Checking ADB version and status inside Docker container..."
-    docker exec my-container /bin/bash -c "adb --version"
-    docker exec my-container /bin/bash -c "adb start-server"
-    docker exec my-container /bin/bash -c "adb devices"
-  displayName: 'Check ADB Status'
+    echo "Copying PartnerDevices_Automation folder to Docker container..."
+    docker cp PartnerDevices_Automation my-container:/app/PartnerDevices_Automation
+  displayName: 'Copy Folder to Docker Container'
 
 - script: |
-    echo "Connecting to Android device via ADB..."
-    docker exec my-container /bin/bash -c "adb connect 10.39.8.149:5555 || echo 'ADB failed to connect to the device. Please check the connection and ensure the device is available.'"
-  displayName: 'Connect ADB Device'
+    echo "Creating symbolic links inside Docker container..."
+    docker exec my-container /bin/bash -c "cd /app/PartnerDevices_Automation && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Voicemail.json /app/PartnerDevices_Automation/resources/Page_objects/voicemail.json \
+    && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Common.json /app/PartnerDevices_Automation/resources/Page_objects/common.json \
+    && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/People.json /app/PartnerDevices_Automation/resources/Page_objects/people.json"
+  displayName: 'Create Symbolic Links'
 
 - script: |
-    echo "Checking connected ADB devices..."
-    docker exec my-container /bin/bash -c "adb devices"
-  displayName: 'Check Connected Devices'
+    echo "Running Robot Framework tests..."
+    docker exec my-container /bin/bash -c "cd /app/PartnerDevices_Automation && robot -d /results -i 237605 tests_teams_room"
+  displayName: 'Run Robot Framework Tests'
+
+- script: |
+    echo "Stopping Docker container..."
+    docker stop my-container
+    docker rm my-container
+  displayName: 'Stop and Remove Docker Container'
