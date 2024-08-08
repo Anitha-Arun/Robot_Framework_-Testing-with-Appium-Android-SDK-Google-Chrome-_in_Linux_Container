@@ -2,11 +2,9 @@ trigger:
 - main  # Adjust to your branch name if necessary
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-latest'  # Use a Microsoft-hosted agent
 
 steps:
-- checkout: self
-
 - script: |
     echo "Building Docker image..."
     docker build -t my-custom-image:latest .
@@ -18,46 +16,20 @@ steps:
   displayName: 'Run Docker Container'
 
 - script: |
-    echo "Copying PartnerDevices_Automation folder to Docker container..."
-    docker cp PartnerDevices_Automation my-container:/app/
-  displayName: 'Copy Folder to Docker Container'
-
-- script: |
-    echo "Creating symbolic links inside Docker container..."
-    docker exec my-container /bin/bash -c "ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Voicemail.json /app/PartnerDevices_Automation/resources/Page_objects/voicemail.json \
-    && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Common.json /app/PartnerDevices_Automation/resources/Page_objects/common.json \
-    && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/People.json /app/PartnerDevices_Automation/resources/Page_objects/people.json"
-  displayName: 'Create Symbolic Links'
-
-- script: |
-    echo "Testing network connectivity to Android device..."
-    docker exec my-container /bin/bash -c "ping -c 4 10.39.8.149"
-  displayName: 'Test Network Connectivity'
-
-- script: |
-    echo "Connecting to Android device via ADB..."
-    docker exec my-container /bin/bash -c "adb start-server"
-    docker exec my-container /bin/bash -c "adb connect 10.39.8.149:5555 -t 120"
-  displayName: 'Connect ADB Device'
-
-- script: |
-    echo "Running Robot Framework tests..."
-    docker exec my-container /bin/bash -c "cd /app/PartnerDevices_Automation && robot -d /results -i 237605 tests_teams_room"
-  displayName: 'Run Robot Framework Tests'
-
-- script: |
-    echo "Copying test results from Docker container to host..."
-    docker cp my-container:/results $(Build.ArtifactStagingDirectory)/results
-  displayName: 'Copy Test Results to Host'
+    echo "Testing ADB functionality in Docker container..."
+    set -o pipefail
+    adb_output=$(docker exec my-container /bin/bash -c "adb start-server && adb devices")
+    echo "$adb_output"
+    if echo "$adb_output" | grep -q 'List of devices attached'; then
+      echo "ADB is working correctly."
+    else
+      echo "ADB is not working correctly. Please check the ADB setup."
+      exit 1
+    fi
+  displayName: 'Test ADB Functionality'
 
 - script: |
     echo "Stopping Docker container..."
     docker stop my-container
     docker rm my-container
   displayName: 'Stop and Remove Docker Container'
-
-- task: PublishPipelineArtifact@1
-  inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)/results'
-    artifact: 'RobotFrameworkResults'
-  displayName: 'Publish Test Results as Pipeline Artifact'
