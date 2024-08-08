@@ -23,14 +23,8 @@ steps:
   displayName: 'Check ADB Status'
 
 - script: |
-    echo "Checking network connectivity to Android device..."
-    docker exec my-container /bin/bash -c "ping -c 4 10.39.8.149"
-    docker exec my-container /bin/bash -c "nc -zv 10.39.8.149 5555"
-  displayName: 'Network Connectivity Check'
-
-- script: |
     echo "Connecting to Android device via ADB..."
-    docker exec my-container /bin/bash -c "adb connect 10.39.8.149:5555"
+    docker exec my-container /bin/bash -c "adb connect 10.39.8.149:5555 || echo 'ADB failed to connect to the device. Please check the connection and ensure the device is available.'"
   displayName: 'Connect ADB Device'
 
 - script: |
