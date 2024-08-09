@@ -2,8 +2,7 @@ trigger:
 - main  # Adjust to your branch name if necessary
 
 pool:
-  vmImage: 'ubuntu-latest' 
-  name: Default  # Change to 'windows-latest' if using a Windows agent
+  vmImage: 'ubuntu-latest'  # Ensure this matches your agent's OS
 
 steps:
 - checkout: self
