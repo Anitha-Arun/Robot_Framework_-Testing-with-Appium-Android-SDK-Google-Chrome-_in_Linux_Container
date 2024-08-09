@@ -2,7 +2,8 @@ trigger:
 - main  # Adjust to your branch name if necessary
 
 pool:
-  name: 'default'  # Specify your self-hosted agent pool here
+  vmImage: 'ubuntu-latest' 
+  name: Default  # Change to 'windows-latest' if using a Windows agent
 
 steps:
 - checkout: self
@@ -22,14 +23,18 @@ steps:
     docker cp PartnerDevices_Automation my-container:/app/PartnerDevices_Automation
   displayName: 'Copy Folder to Docker Container'
 
-- powershell: |
-    Write-Host "Creating symbolic links inside Docker container..."
-    docker exec my-container powershell -Command "cd /app/PartnerDevices_Automation; `
-    New-Item -ItemType SymbolicLink -Path resources/Page_objects/voicemail.json -Target resources/Page_objects/Voicemail.json; `
-    New-Item -ItemType SymbolicLink -Path resources/Page_objects/common.json -Target resources/Page_objects/Common.json; `
-    New-Item -ItemType SymbolicLink -Path resources/Page_objects/people.json -Target resources/Page_objects/People.json"
-  displayName: 'Create Symbolic Links'
+- script: |
+    echo "Checking paths inside Docker container..."
+    docker exec my-container /bin/bash -c "ls -l /app/PartnerDevices_Automation/resources/Page_objects/"
+  displayName: 'Check Paths'
 
+- script: |
+    echo "Creating symbolic links inside Docker container..."
+    docker exec my-container /bin/bash -c "cd /app/PartnerDevices_Automation && \
+    ln -sf resources/Page_objects/Voicemail.json resources/Page_objects/voicemail.json && \
+    ln -sf resources/Page_objects/Common.json resources/Page_objects/common.json && \
+    ln -sf resources/Page_objects/People.json resources/Page_objects/people.json"
+  displayName: 'Create Symbolic Links'
 
 - script: |
     echo "Running Robot Framework tests..."
