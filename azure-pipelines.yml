@@ -2,7 +2,7 @@ trigger:
 - main  # Adjust to your branch name if necessary
 
 pool:
-  name: 'default'  # Specify your self-hosted agent pool here
+  name: 'AgentSelfhosted'  # Specify your self-hosted agent pool here
 
 steps:
 - checkout: self
@@ -24,9 +24,10 @@ steps:
 
 - script: |
     echo "Creating symbolic links inside Docker container..."
-    docker exec my-container /bin/bash -c "cd /app/PartnerDevices_Automation && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Voicemail.json /app/PartnerDevices_Automation/resources/Page_objects/voicemail.json \
-    && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Common.json /app/PartnerDevices_Automation/resources/Page_objects/common.json \
-    && ln -sf /app/PartnerDevices_Automation/resources/Page_objects/People.json /app/PartnerDevices_Automation/resources/Page_objects/people.json"
+    docker exec my-container /bin/bash -c "cd /app/PartnerDevices_Automation && \
+    ln -sf resources/Page_objects/Voicemail.json resources/Page_objects/voicemail.json && \
+    ln -sf resources/Page_objects/Common.json resources/Page_objects/common.json && \
+    ln -sf resources/Page_objects/People.json resources/Page_objects/people.json"
   displayName: 'Create Symbolic Links'
 
 - script: |
