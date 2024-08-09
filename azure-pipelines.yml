@@ -2,7 +2,7 @@ trigger:
 - main  # Adjust to your branch name if necessary
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: 'default'  # Specify your self-hosted agent pool here
 
 steps:
 - checkout: self
