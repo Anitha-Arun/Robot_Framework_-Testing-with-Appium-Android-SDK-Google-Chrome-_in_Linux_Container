@@ -1,0 +1,35 @@
+{
+  "hot_desk_btn": {
+    "id": "com.microsoft.skype.teams.ipphone:id/hot_desking_button",
+    "xpath": "//android.widget.TextView[@text='Hot desk']"
+  },
+  "stop_hot_desking": {
+    "id": "com.microsoft.skype.teams.ipphone:id/hot_desking_button",
+    "xpath": "//android.widget.TextView[@content-desc='Stop hot desking']"
+  },
+  "hot_desking_timeout": {
+    "id": "com.microsoft.skype.teams.ipphone:id/hot_desking_timeout",
+    "command": "new UiSelector().className(\"android.widget.TextView\").textContains(\"Session will end at\")"
+  },
+  "continue_button": {
+    "id": "android:id/button1",
+    "xpath": "//android.widget.Button[@text='Continue']"
+  },
+  "hd_timeout_message": {
+    "id": "android:id/message",
+    "xpath": "//android.widget.LinearLayout[@index, '0']/android.widget.TextView[@index, '1']"
+  },
+  "end_button": {
+    "xpath": "//android.widget.Button[@text='END']"
+  },
+  "cancel_button": {
+    "xpath": "//android.widget.Button[@text='CANCEL']"
+  },
+  "hot_desk_error_popup_ok": {
+    "xpath": "//android.widget.Button[@text='OK']"
+  },
+  "hot_desk_error_signin": {
+    "id": "com.microsoft.skype.teams.ipphone:id/sign_in_button",
+    "xpath": "//android.widget.Button[@text='Sign in']"
+  }
+}

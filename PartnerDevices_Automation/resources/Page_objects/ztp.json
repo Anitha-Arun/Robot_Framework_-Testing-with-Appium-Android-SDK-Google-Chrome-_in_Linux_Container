@@ -1,0 +1,105 @@
+{
+  "Step1_text_on_signin_page": {
+    "xpath": "//android.widget.TextView[@text='On your computer or mobile, go to https://microsoft.com/devicelogin']",
+    "xpath1": "//android.widget.TextView[@text='Step 1: On your computer or mobile, go to https://microsoft.com/devicelogin']"
+  },
+  "Step2_text_on_signin_page": {
+    "xpath": "//android.widget.TextView[@text='Enter the code below to sign in.']",
+    "xpath1": "//android.widget.TextView[@text='Step 2: Enter the code below to sign in.']"
+  },
+  "dfc_code_start_expiry_time": {
+    "id": "com.microsoft.skype.teams.ipphone:id/dfc_login_code_expiry_time",
+    "id1": "com.microsoft.skype.teams.ipphone:id/dcf_login_code_expiry_time"
+  },
+  "Cloud_option": {
+  "xpath": "//android.widget.TextView[@text='Cloud']"
+  },
+  "Provision_device": {
+    "xpath":"//android.widget.TextView[@text='Provision device']"
+  },
+  "Device_settings": {
+    "xpath": "//android.widget.TextView[@text='Device settings']"
+  },
+  "Report_an_issue": {
+    "xpath": "//android.widget.TextView[@text='Report an issue']"
+  },
+  "Close_icon": {
+    "id": "com.microsoft.skype.teams.ipphone:id/close_icon"
+  },
+  "Public": {
+    "xpath": "//android.widget.TextView[@text='Public']"
+  },
+  "GCC":{
+    "xpath": "//android.widget.TextView[@text='GCC']"
+  },
+  "GCC_High": {
+    "xpath": "//android.widget.TextView[@text='GCC High']"
+  },
+  "GCC_DoD": {
+    "xpath": "//android.widget.TextView[@text='GCC DoD']"
+  },
+  "Verification_code_text_field": {
+    "id": "com.microsoft.skype.teams.ipphone:id/code_input_text",
+    "xpath": "//android.widget.EditText[@text='Type the verification code']"
+  },
+  "Code_keypad":{
+    "id": "com.microsoft.skype.teams.ipphone:id/code_key_pad"
+  },
+  "Provision_device_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/verification_next_button"
+  },
+  "Back_button": {
+    "id": "idBtn_Back",
+    "xpath": "//android.widget.ImageButton[@content-desc='Back']",
+    "xpath1": "//android.widget.Button[@text='Back']"
+  },
+  "Public_login_url": {
+    "xpath": "//android.widget.TextView[@text='On your computer or mobile, go to https://microsoft.com/devicelogin']",
+    "xpath1": "//android.widget.TextView[@text='Step 1: On your computer or mobile, go to https://microsoft.com/devicelogin']"
+  },
+  "GCC_login_url":{
+    "xpath": "//android.widget.TextView[@text='On your computer or mobile, go to https://microsoft.com/devicelogin']",
+    "xpath1": "//android.widget.TextView[@text='Step 1: On your computer or mobile, go to https://microsoft.com/devicelogin']"
+  },
+  "GCC_High_login_url": {
+    "xpath": "//android.widget.TextView[@text='On your computer or mobile, go to https://microsoft.com/deviceloginus']",
+    "xpath1": "//android.widget.TextView[@text='Step 1: On your computer or mobile, go to https://microsoft.com/deviceloginus']"
+  },
+  "GCC_DoD_login_url": {
+    "xpath": "//android.widget.TextView[@text='On your computer or mobile, go to https://microsoft.com/deviceloginus']",
+    "xpath1": "//android.widget.TextView[@text='Step 1: On your computer or mobile, go to https://microsoft.com/deviceloginus']"
+  },
+  "emergency_label_signin_page": {
+    "id": "com.microsoft.skype.teams.ipphone:id/sign_in_required_label"
+  },
+  "provision_backspace_btn": {
+    "id": "com.microsoft.skype.teams.ipphone:id/backspace"
+  },
+  "alias": {
+    "id": "com.microsoft.skype.teams.ipphone:id/feedback_alias"
+  },
+  "title_required": {
+    "id": "com.microsoft.skype.teams.ipphone:id/feedback_title"
+  },
+  "bug_details": {
+    "id": "com.microsoft.skype.teams.ipphone:id/feedback_content"
+  },
+  "send_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/action_submit"
+  },
+  "welcome_message": {
+    "command": "new UiSelector().textContains(\"Welcome to Microsoft Teams!\")"
+  },
+  "cross_mark": {
+    "id": "com.microsoft.skype.teams.ipphone:id/btn_close"
+  },
+  "login_info_lcp": {
+    "id": "com.microsoft.skype.teams.ipphone:id/login_info"
+  },
+  "enter_the_code_for_sign_in_text_lcp": {
+    "xpath": "//android.widget.TextView[@text='and enter the code below to sign in.']"
+  },
+  "physical_dial_pad_message":{
+    "id": "com.microsoft.skype.teams.ipphone:id/physical_dialpad_msg_text"
+  }
+}

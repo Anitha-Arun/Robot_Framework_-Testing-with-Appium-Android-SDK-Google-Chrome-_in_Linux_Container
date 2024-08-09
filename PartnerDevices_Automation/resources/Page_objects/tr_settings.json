@@ -1,0 +1,157 @@
+{
+  "settings_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/settings",
+    "id1": "com.microsoft.skype.teams.ipphone:id/fre_partner_settings",
+    "xpath": "//android.widget.TextView[@text='Settings']"
+  },
+  "help_and_feedback": {
+    "id": "com.microsoft.skype.teams.ipphone:id/settings_item_help_and_feedback_text",
+    "xpath": "//android.widget.TextView[@text='Help & feedback']"
+  },
+  "Report_an_issue": {
+    "id": "om.microsoft.skype.teams.ipphone:id/settings_item_report_an_issue_text",
+    "command": "new UiSelector().textContains(\"Report an issue\")"
+  },
+  "more_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/more_btn",
+    "id1": "com.microsoft.skype.teams.ipphone:id/call_more_options",
+    "xpath": "//android.widget.TextView[@text='More']"
+  },
+  "settings_tool_bar": {
+    "id": "com.microsoft.skype.teams.ipphone:id/toolbar"
+  },
+  "about": {
+    "xpath": "//android.widget.TextView[@text='About']",
+    "id": "com.microsoft.skype.teams.ipphone:id/settings_item_about"
+  },
+  "privacy_cookies": {
+    "id": "com.microsoft.skype.teams.ipphone:id/privacy_link",
+    "xpath": "//android.widget.TextView[@text='Privacy & Cookies']"
+  },
+  "term_of_use": {
+    "id": "com.microsoft.skype.teams.ipphone:id/terms_of_use_link",
+    "xpath": "//android.widget.TextView[@text='Terms of Use']"
+  },
+  "version": {
+    "id": "com.microsoft.skype.teams.ipphone:id/build_version"
+  },
+  "copy_right": {
+    "id": "com.microsoft.skype.teams.ipphone:id/copyright"
+  },
+  "third_party_information": {
+    "id": "com.microsoft.skype.teams.ipphone:id/third_party_notices_link"
+  },
+  "proximity_join": {
+    "xpath": "//android.widget.TextView[@text='Proximity join']"
+  },
+  "manage_devices": {
+    "xpath": "//android.widget.TextView[@text='Manage devices']"
+  },
+  "calling_button": {
+    "xpath": "//android.widget.TextView[@text='Calling']"
+  },
+  "proximity_toggle_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/toggle"
+  },
+  "proximity_toggle_on": {
+    "xpath": "//android.widget.Switch[@text='ON']"
+  },
+  "proximity_toggle_off": {
+    "xpath": "//android.widget.Switch[@text='OFF']"
+  },
+  "meetings_button": {
+    "xpath": "//*[@text='Meetings']"
+  },
+  "connect_device_text": {
+    "xpath": "//android.widget.TextView[@text='Connect a device']"
+  },
+  "find_device_btn": {
+    "xpath": "//android.widget.TextView[@text='Find a device']",
+    "id": "com.microsoft.skype.teams.ipphone:id/pair_add_device_label"
+  },
+  "proximity_toggle": {
+    "id": "com.microsoft.skype.teams.ipphone:id/toggle"
+  },
+  "device_health": {
+    "id": "com.microsoft.skype.teams.ipphone:id/settings_health_privacy"
+  },
+  "wallpapers_button": {
+    "xpath": "//*[@text='Wallpapers']"
+  },
+  "send_bug": {
+    "xpath": "//android.widget.Button[@text='Report an issue']"
+  },
+  "Report Problem": {
+    "xpath": "//android.widget.TextView[@text='Report Problem']"
+  },
+  "Audio": {
+    "xpath": "//android.widget.TextView[@text='Audio']"
+  },
+  "Alias": {
+    "id": "com.microsoft.skype.teams.ipphone:id/feedback_alias"
+  },
+  "Select category": {
+    "xpath": "//android.widget.TextView[@text='Select category']"
+  },
+  "Title required": {
+    "xpath": "//android.widget.EditText[@text='Title required (min 10 characters)']"
+  },
+  "bug details": {
+    "xpath": "//android.widget.EditText[@text='Please enter bug details here including repro steps. Do not include personally identifiable information.']"
+  },
+  "device_settings": {
+    "command": "new UiSelector().textContains(\"Device settings\")"
+  },
+  "calling_button_text": {
+    "id": "com.microsoft.skype.teams.ipphone:id/action_bar_title_text",
+    "xpath": "android.widget.TextView[@text='Calling']"
+  },
+  "Calls_for_you": {
+    "xpath": "//android.widget.TextView[@text='Calls for you']"
+  },
+  "forwarded_calls": {
+    "xpath": "//android.widget.TextView[@text='Forwarded calls']"
+  },
+  "delegated_calls": {
+    "xpath": "//android.widget.TextView[@text='Delegated calls']"
+  },
+  "block_calls_with_no_caller_ID": {
+    "xpath": "//android.widget.TextView[@text='Block calls with no caller ID']"
+  },
+  "Blocked_numbers": {
+    "xpath": "//android.widget.Button[@text='Blocked numbers']"
+  },
+  "Add_number": {
+    "xpath": "//android.widget.TextView[@text='Add number']"
+  },
+  "Block_number": {
+    "xpath": "//android.widget.TextView[@text='Block number']"
+  },
+  "Block_number_field": {
+    "xpath": "//android.widget.EditText[@class = 'android.widget.EditText']"
+  },
+  "block_ok_button": {
+    "xpath": "//android.widget.Button[@text='BLOCK']"
+  },
+  "blocked_list": {
+    "id": "com.microsoft.skype.teams.ipphone:id/blocked_number"
+  },
+  "unblock_number": {
+    "id": "com.microsoft.skype.teams.ipphone:id/ImageView_UnBlockNumber"
+  },
+  "unblock_ok_button": {
+    "xpath": "//android.widget.Button[@text='UNBLOCK']"
+  },
+  "send_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/action_submit"
+  },
+  "call_forwarding_tgl": {
+    "id": "com.microsoft.skype.teams.ipphone:id/calling_toggle_call_ring_me_switch"
+  },
+  "facebook": {
+    "command": "new UiSelector().text(\"Facebook\")"
+  },
+  "Default_stage_layout": {
+    "command": "new UiSelector().textContains(\"Default stage layout\")"
+  }
+}

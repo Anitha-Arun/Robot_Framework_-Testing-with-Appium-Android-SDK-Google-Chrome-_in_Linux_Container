@@ -1,0 +1,12 @@
+Appium-Python-Client==2.11.1
+pillow==10.2.0
+pytz==2021.1
+robotframework==3.2.1
+selenium
+pandas
+XlsxWriter
+openpyxl
+
+# To support pipeline quality gates:
+pylint==3.2.2
+black==23.3.0

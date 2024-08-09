@@ -1,0 +1,72 @@
+{
+  "call_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_text_container",
+    "id1": "com.microsoft.skype.teams.ipphone:id/call_button",
+    "command": "new UiSelector().textContains(\"Call\")"
+  },
+  "hang_up_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_end_button",
+    "xpath": "//android.widget.TextView[@content-desc='Hang up button']"
+  },
+  "video_on": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_control_video",
+    "xpath": "//android.widget.FrameLayout[@content-desc='Video button on']"
+  },
+  "video_off": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_control_video",
+    "xpath": "//android.widget.FrameLayout[@content-desc='Video button off']"
+  },
+  "recording_notification_text": {
+    "xpath": "//android.widget.FrameLayout[@text=You've joined a meeting that is being recorded. Privacy Policy']"
+  },
+  "volume_plus": {
+    "id": "com.microsoft.skype.teams.ipphone:id/volume_plus"
+  },
+  "volume_minus": {
+    "id": "com.microsoft.skype.teams.ipphone:id/volume_minus"
+  },
+  "volume_icon": {
+    "id": "com.microsoft.skype.teams.ipphone:id/volume_icon"
+  },
+  "recording_notification": {
+    "id": "com.microsoft.skype.teams.ipphone:id/banner_message_without_link",
+    "xpath": "//android.widget.TextView[@text='Recording is saved in chat history.']",
+    "xpath1": "//android.widget.TextView[@text='Someone started recording']"
+  },
+  "put_call_on_hold": {
+    "xpath": "//android.widget.Button[@text='Put call on hold']",
+    "xpath1": "//android.widget.Button[@text='Put me on hold']"
+  },
+  "reject_call": {
+    "id": "com.microsoft.skype.teams.ipphone:id/vc_end_call"
+  },
+  "mic_button_muted": {
+    "xpath": "//android.widget.FrameLayout[@content-desc='Mic button muted']"
+  },
+  "mic_button_unmuted": {
+    "xpath": "//android.widget.FrameLayout[@content-desc='Mic button unmuted']"
+  },
+  "resume_btn": {
+    "id": "com.microsoft.skype.teams.ipphone:id/call_unhold_button",
+    "xpath": "//android.widget.TextView[@text='Resume']"
+  },
+  "gallery_mode_state": {
+    "xpath": "//*[@text = 'Gallery']/following-sibling::android.widget.FrameLayout[1]",
+    "xpath1": "//*[@text = 'Gallery']/following-sibling::android.widget.ImageView[1]"
+  },
+  "content_gallery_state": {
+    "xpath": "//*[@text = 'Content + Gallery']/following-sibling::android.widget.FrameLayout[1]",
+    "xpath1": "//*[@text = 'Content + Gallery']/following-sibling::android.widget.ImageView[1]"
+  },
+  "content_only_state": {
+    "xpath": "//*[@text = 'Content']/following-sibling::android.widget.FrameLayout[1]",
+    "xpath1": "//*[@text = 'Content']/following-sibling::android.widget.ImageView[1]"
+  },
+  "front_row_state": {
+    "xpath": "//*[@text = 'Front row']/following-sibling::android.widget.FrameLayout[1]",
+    "xpath1": "//*[@text = 'Front row']/following-sibling::android.widget.ImageView[1]"
+  },
+  "accept_call_on_msg":{
+    "xpath": "//*[@text= 'Accept on console']"
+  }
+}

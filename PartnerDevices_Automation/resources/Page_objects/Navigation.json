@@ -1,0 +1,97 @@
+{
+  "Navigation": {
+    "id": "com.microsoft.skype.teams.ipphone:id/avatar",
+    "id1": "com.microsoft.skype.teams.ipphone:id/user_profile_picture",
+    "xpath": "//android.widget.Button[@content-desc='Navigation']"
+  },
+  "Details_Container": {
+    "id": "com.microsoft.skype.teams.ipphone:id/detailsContainer"
+  },
+  "user_name": {
+    "xpath": "//android.widget.TextView[@text='replace_xpath']",
+    "id": "com.microsoft.skype.teams.ipphone:id/more_display_name"
+  },
+  "user_image": {
+    "id": "com.microsoft.skype.teams.ipphone:id/more_user_avatar"
+  },
+  "contact_details": {
+    "xpath": "//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView"
+  },
+  "Settings_button": {
+    "xpath": "//*[@text='Settings']"
+  },
+  "Set_your_work_location": {
+    "id": "com.microsoft.skype.teams.ipphone:id/work_location_status",
+    "xpath": "//android.widget.TextView[@text='Set your work location' or @text='Set work location']"
+  },
+  "Set_status_message": {
+    "text": "Set status message",
+    "id": "com.microsoft.skype.teams.ipphone:id/more_status_note_or_oof_text",
+    "xpath": "//android.widget.TextView[@text='Set status message']"
+  },
+  "presence": {
+    "id": "com.microsoft.skype.teams.ipphone:id/more_current_presence_label",
+    "xpath": "//android.widget.TextView[@index, '1']"
+  },
+  "more_current_presence_btn": {
+    "id": "com.microsoft.skype.teams.ipphone:id/more_current_presence_container"
+  },
+  "Available": {
+    "text": "Available",
+    "xpath": "//android.widget.TextView[@text='Available']"
+  },
+  "Busy": {
+    "text": "Busy",
+    "xpath": "//android.widget.TextView[@text='Busy']"
+  },
+  "Do_not_disturb": {
+    "text": "Do not disturb",
+    "xpath": "//android.widget.TextView[@text='Do not disturb']"
+  },
+  "Be_right_back": {
+    "text": "Be right back",
+    "xpath": "//android.widget.TextView[@text='Be right back']"
+  },
+  "Offline": {
+    "id": "com.microsoft.skype.teams.ipphone:id/more_offline_presence_label",
+    "xpath": "//android.widget.TextView[@text='Offline']"
+  },
+  "Away": {
+    "text": "Away",
+    "xpath": "//android.widget.TextView[@text='Away']"
+  },
+  "Reset_status": {
+    "text": "Reset status",
+    "xpath": "//android.widget.TextView[@text='Reset status']"
+  },
+  "Clear_Text": {
+    "xpath": "//android.widget.Button[@content-desc='Clear list of recent searches']",
+    "xpath1": "//android.widget.TextView[@text='Clear']"
+  },
+  "mailid": {
+    "id": "com.microsoft.skype.teams.ipphone:id/contact_card_item_link_with_text",
+    "xpath": "//android.view.ViewGroup[contains(@index,'2')]/android.widget.TextView",
+    "xpath1": "//android.widget.TextView[@text='Email']"
+  },
+  "current_presence_label": {
+    "id": "com.microsoft.skype.teams.ipphone:id/more_current_presence_label"
+  },
+  "navigation_btn": {
+    "id": "com.microsoft.skype.teams.ipphone:id/avatar",
+    "xpath": "//android.widget.RelativeLayout[@content-desc='Navigation']"
+  },
+  "reset_status": {
+    "id": "com.microsoft.skype.teams.ipphone:id/more_reset_status_presence_label"
+  },
+  "what's_new": {
+    "text": "What's new",
+    "id": "com.microsoft.skype.teams.ipphone:id/whats_new_button_text"
+  },
+  "hot_desk_btn": {
+    "id": "com.microsoft.skype.teams.ipphone:id/hot_desking_button",
+    "xpath": "//android.widget.TextView[@text='Hot desk']"
+  },
+  "default_presence_state": {
+    "xpath": "//android.widget.Button[@content-desc='Current status is Available.. Double tap to update status.']"
+  }
+}

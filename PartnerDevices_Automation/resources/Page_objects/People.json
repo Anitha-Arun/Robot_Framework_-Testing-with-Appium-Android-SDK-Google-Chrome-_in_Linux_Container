@@ -1,0 +1,215 @@
+{
+  "people_tab": {
+    "text": "People",
+    "xpath": "//*[@content-desc='People']",
+    "xpath1": "//*[@text='People']",
+    "command": "new UiSelector().description(\"People\")"
+  },
+  "Header": {
+    "id": "com.microsoft.skype.teams.ipphone:id/action_bar_title_text",
+    "xpath": "//android.widget.TextView[@text='People']"
+  },
+  "plus_icon": {
+    "command": "new UiSelector().description(\"Add contact\")",
+    "id": "com.microsoft.skype.teams.ipphone:id/people_more_options"
+  },
+  "create_new_group": {
+    "command": "new UiSelector().description(\"Create new group\")",
+    "xpath": "//*[@text='Create new group']"
+  },
+  "add_from_directory": {
+    "command": "new UiSelector().description(\"Add from directory\")",
+    "xpath": "//*[@text='Add from directory']"
+  },
+  "name_your_group": {
+    "id": "com.microsoft.skype.teams.ipphone:id/input_edit_text",
+    "xpath": "//android.widget.EditText[@text='Name your group']",
+    "id1": "com.microsoft.skype.teams.ipphone:id/new_group_name_edit_text"
+  },
+  "add_from_directory_text_view": {
+    "xpath": "//android.widget.TextView[@text='Add from directory']"
+  },
+  "all_contacts_drop_down": {
+    "id": "com.microsoft.skype.teams.ipphone:id/group_name",
+    "xpath": "//android.widget.TextView[@text='All Contacts']"
+  },
+  "user_title": {
+    "id": "com.microsoft.skype.teams.ipphone:id/title"
+  },
+  "group_name_arrow": {
+    "id": "com.microsoft.skype.teams.ipphone:id/group_name_arrow"
+  },
+  "all_contacts_group": {
+    "xpath": "//android.widget.TextView[@text='All Contacts']",
+    "xpath1": "//android.widget.Button[@text='All Contacts']",
+    "xpath2": "//android.view.View[@content-desc='All Contacts']"
+  },
+  "group_list": {
+    "id": "com.microsoft.skype.teams.ipphone:id/title",
+    "id1": "com.microsoft.skype.teams.ipphone:id/design_bottom_sheet",
+    "xpath": "//android.widget.Button[contains(@index,'0')]",
+    "xpath1": "//*[@resource-id='com.microsoft.skype.teams.ipphone:id/contacts_grid']/android.view.ViewGroup"
+},
+  "speed_dial_group": {
+    "xpath": "//android.widget.TextView[@text='Speed dial']",
+    "xpath1": "//android.widget.Button[@text='Speed dial']"
+  },
+  "other_contacts_group": {
+    "xpath": "//android.widget.TextView[@text='Other contacts']",
+    "xpath1": "//android.widget.Button[@text='Other contacts']"
+  },
+  "favorites_group": {
+    "xpath": "//android.widget.TextView[@text='Favorites']",
+    "xpath1": "//android.widget.Button[@text='Favorites']"
+  },
+  "tagged_group": {
+    "xpath": "//android.widget.TextView[@text='Tagged']",
+    "xpath1": "//android.view.ViewGroup[@content-desc='Tagged']"
+  },
+  "appears_in": {
+    "xpath": "//android.widget.TextView[@text='Appears in']"
+  },
+  "add_edit_text": {
+    "id": "com.microsoft.skype.teams.ipphone:id/add_edit_text"
+  },
+  "search_result_item_container": {
+    "id": "com.microsoft.skype.teams.ipphone:id/search_result_user_name",
+    "xpath": "//android.widget.TextView[@text='config_display']"
+  },
+  "group_name_xpath": {
+    "xpath": "//*[@text='group_name']"
+  },
+  "action_submit": {
+    "id": "com.microsoft.skype.teams.ipphone:id/action_submit",
+    "xpath": "//android.widget.TextView[@text='Save']"
+  },
+  "make_an_audio_call": {
+    "xpath": "//android.widget.ImageView[@content-desc='Make an audio call']",
+    "xpath1": "//android.widget.ImageView[@content-desc='Make an audio call button']"
+  },
+  "email": {
+    "xpath": "//android.widget.TextView[@content-desc='Email']"
+  },
+  "ppl_more_options_button": {
+    "id": "com.microsoft.skype.teams.ipphone:id/peoplev2_more_options",
+    "xpath": "//android.widget.ImageView[@content-desc='More options']"
+  },
+  "appears_in_groups": {
+    "command": "new UiSelector().textContains(\"Change_Me\").descriptionContains(\"Appears in.\")"
+  },
+  "create_btn": {
+    "id": "com.microsoft.skype.teams.ipphone:id/create",
+    "xpath": "//android.widget.Button[@text='Create']",
+    "id1": "com.microsoft.skype.teams.ipphone:id/ok_button"
+  },
+  "cancel_btn": {
+    "id": "com.microsoft.skype.teams.ipphone:id/cancel",
+    "id1":  "com.microsoft.skype.teams.ipphone:id/back_button"
+  },
+  "more_option": {
+    "id": "com.microsoft.skype.teams.ipphone:id/more_options",
+    "xpath": "//*[@content-desc='group_name']/*[@resource-id='com.microsoft.skype.teams.ipphone:id/more_options']",
+    "xpath1": "//*[@resource-id='com.microsoft.skype.teams.ipphone:id/group_name_layout']/following-sibling::*[@resource-id='com.microsoft.skype.teams.ipphone:id/more_options']"
+  },
+  "edit_group": {
+    "xpath": "//android.widget.TextView[@text='Edit group']",
+    "xpath1": "//android.widget.Button[@text='Edit group']"
+  },
+  "delete_group": {
+    "xpath": "//android.widget.TextView[@text='Delete group']",
+    "id": "com.microsoft.skype.teams.ipphone:id/delete_group_label"
+  },
+  "save_btn": {
+    "id": "com.microsoft.skype.teams.ipphone:id/save"
+  },
+  "contact_title": {
+    "id": "com.microsoft.skype.teams.ipphone:id/title",
+    "xpath": "//*[@text='replace_username']"
+  },
+  "error_msg": {
+    "xpath": "//android.widget.TextView[@text='Contact group already exits']",
+    "xpath1": "//android.widget.TextView[@text='Contact List displayName is already in use.']"
+  },
+  "ok_btn": {
+    "xpath": "//android.widget.Button[@text='OK']",
+    "id": "com.microsoft.skype.teams.ipphone:id/ok_button"
+  },
+  "empty_group_error_msg": {
+    "xpath": "//android.widget.TextView[@text='Group name cannot be empty']"
+  },
+  "add_to_contacts": {
+    "xpath": "//android.widget.TextView[@text='Add to contacts']"
+  },
+  "contacts_are_out_msg": {
+    "xpath": "//android.widget.TextView[@text='Your contacts are out and about']"
+  },
+  "lets_bring_them_it_msg": {
+    "xpath": "//android.widget.TextView[@text='Let’s bring them in.']",
+    "id": "com.microsoft.skype.teams.ipphone:id/subtitle"
+  },
+  "presence_xpath": {
+    "xpath": "//android.widget.FrameLayout[contains(@index,'0')]/android.widget.ImageView[contains(@index,'0')]"
+  },
+  "remove_from_group": {
+    "xpath": "//*[@text='Remove from group']"
+  },
+  "add_to_group": {
+    "command": "new UiSelector().textContains(\"Add to group\")"
+  },
+  "user_designation": {
+    "id": "com.microsoft.skype.teams.ipphone:id/designation"
+  },
+  "create_group_text": {
+    "id": "com.microsoft.skype.teams.ipphone:id/create_group_text"
+  },
+  "user_profile_picture": {
+    "id": "com.microsoft.skype.teams.ipphone:id/hero_user_avatar_container",
+    "id1": "com.microsoft.skype.teams.ipphone:id/user_profile_picture",
+    "xpath": "//android.widget.ImageView[contains(@index,'0')]"
+  },
+  "user_name": {
+    "xpath": "//android.widget.TextView[contains(@index,'1')]"
+  },
+  "people_list_view": {
+    "id": "com.microsoft.skype.teams.ipphone:id/people_list_recycler_view"
+  },
+  "group_title": {
+    "id": "com.microsoft.skype.teams.ipphone:id/group_name_layout"
+  },
+  "people_view": {
+    "id": "com.microsoft.skype.teams.ipphone:id/people_list_recycler_view"
+  },
+  "people_tab_cap": {
+  "xpath": "//android.widget.TextView[@text='PEOPLE']"
+  },
+  "invalid_input": {
+    "id": "android:id/message",
+    "command": "new UiSelector().textContains(\"Invalid input\")"
+  },
+  "people_more_lcp": {
+    "id": "com.microsoft.skype.teams.ipphone:id/people_more_options"
+  },
+  "all_contacts_group_lcp":{
+    "id": "com.microsoft.skype.teams.ipphone:id/group_name_container",
+    "xpath": "//android.view.ViewGroup[@content-desc='All Contacts']"
+  },
+  "group_arrow": {
+    "id": "com.microsoft.skype.teams.ipphone:id/arrow"
+  },
+  "create_new_contact": {
+    "command": "new UiSelector().textContains(\"Create new contact\")"
+  },
+  "contact_card_full_view": {
+    "id": "com.microsoft.skype.teams.ipphone:id/contact_card_items_list"
+  },
+  "people_more_tab": {
+     "id": "com.microsoft.skype.teams.ipphone:id/more_action"
+  },
+  "people_tab_unpark_call": {
+    "xpath": "//*[@text='Unpark Call' or @text='Pick up a parked call' ]"
+  },
+  "more_option_for_group_participant": {
+    "xpath": "//*[@content-desc='group_name']/following-sibling::*/*[@text='user_name']",
+    "xpath1": "//*[@content-desc='group_name']/following-sibling::*/*[@resource-id = 'com.microsoft.skype.teams.ipphone:id/contact_display_name']"
+  }
+}
