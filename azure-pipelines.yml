@@ -28,13 +28,6 @@ steps:
     docker exec my-container /bin/bash -c "ls -l /app/PartnerDevices_Automation/resources/Page_objects/"
   displayName: 'Check Paths'
 
-- script: |
-    echo "Creating symbolic links inside Docker container..."
-    docker exec my-container /bin/bash -c "cd /app/PartnerDevices_Automation && \
-    ln -sf resources/Page_objects/Voicemail.json resources/Page_objects/voicemail.json && \
-    ln -sf resources/Page_objects/Common.json resources/Page_objects/common.json && \
-    ln -sf resources/Page_objects/People.json resources/Page_objects/people.json"
-  displayName: 'Create Symbolic Links'
 
 - script: |
     echo "Running Robot Framework tests..."
