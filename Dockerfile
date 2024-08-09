@@ -1,4 +1,4 @@
-ROM ubuntu:20.04
+FROM ubuntu:20.04
 
 # Suppress interaction with the package manager
 ENV DEBIAN_FRONTEND=noninteractive
