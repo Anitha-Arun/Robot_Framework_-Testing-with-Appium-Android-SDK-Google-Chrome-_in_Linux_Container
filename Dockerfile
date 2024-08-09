@@ -97,6 +97,12 @@ RUN pip3 install -r /tmp/requirements.txt
 # Ensure these commands are in the system PATH
 ENV PATH="/usr/local/bin:${PATH}"
 
+# Create symbolic links inside the Docker container
+RUN mkdir -p /app/PartnerDevices_Automation/resources/Page_objects && \
+    ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Voicemail.json /app/PartnerDevices_Automation/resources/Page_objects/voicemail.json && \
+    ln -sf /app/PartnerDevices_Automation/resources/Page_objects/Common.json /app/PartnerDevices_Automation/resources/Page_objects/common.json && \
+    ln -sf /app/PartnerDevices_Automation/resources/Page_objects/People.json /app/PartnerDevices_Automation/resources/Page_objects/people.json
+
 WORKDIR /app
 
 # Run the startup script
