@@ -3,7 +3,7 @@ trigger:
 
 pool:
    vmImage: 'ubuntu-latest' 
-   name: Default  # Change to 'windows-latest' if using a Windows agent
+   name: Azure Pipelines  # Change to 'windows-latest' if using a Windows agent
 
 steps:
 - checkout: self
